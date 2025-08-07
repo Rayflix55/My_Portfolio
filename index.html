@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7401a24b2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head> 
+  <body class="bg-black text-white Ubuntu sans-serif overflow-x-hidden ">
+   <div id="particles-js" class="fixed  h-full "></div>
+
+<section id="first-section" class="">
+  <nav class="flex justify-between items-center mt-4 mb-4 px-6">
+    <h1 class="text-3xl text-red-500" id="Logo" data-aos="zoom-in" data-aos-duration="1500">RAYFLIX</h1>
+
+    <!-- Hamburger + Close Icon (mobile only) -->
+    <div class="md:hidden text-white text-2xl cursor-pointer" id="menu-toggle">
+      <i class="fas fa-bars" id="hamburger-icon"></i>
+      
+    </div>
+
+    <!-- Nav links for desktop -->
+    <div class="hidden md:flex space-x-12 text-red-500 mr-8" id="nav-links">
+      <a href="#first_section" class="nav-link transition transform hover:text-white hover:underline hover:scale-110 duration-400">Home</a>
+      <a href="#second_section" class="nav-link transition transform hover:text-white hover:underline hover:scale-110 duration-400">About Me</a>
+      <a href="#third_section" class="nav-link transition transform hover:text-white hover:underline hover:scale-110 duration-400">My Skills</a>
+      <a href="#fourth_section" class="nav-link transition transform hover:text-white hover:underline hover:scale-110 duration-400">My Services</a>
+
+      <a href="#fifth_section" class="nav-link transition transform hover:text-white hover:underline hover:scale-110 duration-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Dropdown -->
+  <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-6 text-red-500">
+    <a href="first_section" class="block hover:text-white">Home</a>
+    <a href="#second_section" class="block hover:text-white">About Me</a>
+    <a href="#third_section" class="block hover:text-white">My Skills</a>
+    <a href="#fourth_section" class="block hover:text-white">My Services</a>
+    <a href="#fifth_section" class="block hover:text-white">Contact</a>
+  </div>
+</section>
+
+
+
+    <section id="first_section">
+      <div class="flex justify-between mt-10 max-[480px]:flex-col items-center ">
+        <div class="ml-20">
+          <img src="Web3_Rayflix3.png" alt="Rayflix" class="bg-transparent opacity-92 size-full object-cover w-86 h-130 mb-10  shadow-none hover:shadow-[0_10px_30px_rgba(255,0,0,0.5)] transition-transform hover:scale-90 duration-400 max-[480px]:flex-col  max-[480px]:size-2/3 max-[480px]:justify-center" />
+        </div>
+        <div class="mr-12 flex flex-col justify-center  mr-30 ml-30">
+          <h1 class="text-2xl mb-2">
+            Hey, I'm <span class="text-red-500" id="ray">Rayflix</span>
+          </h1>
+          <h2 class="text-4xl mb-3 max-[480px]:text-3xl ">
+            I'm a <span class="text-red-500" id="soft">SOFTWARE DEVELOPER</span>
+          </h2>
+          <p class="text-sm italic ">
+            I am a web developer with a passion for creating dynamic and
+            responsive websites. <br />
+            I specialize in front-end development, using HTML, CSS, and
+            JavaScript to build user-friendly interfaces. <br />
+            My goal is to deliver high-quality web solutions that meet the needs
+            of my clients.
+          </p>
+          <div class="justify-around space-x-10  m-5 ">
+            <a
+              href="https://www.linkedin.com/in/raymond-samuel-993971329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              aria-label="LinkedIn"
+              class="text-3xl hover:text-blue-500 text-red-500"
+            >
+              <i
+                class="fa-brands fa-linkedin transition-transform transform hover:scale-125 duration-400"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/Rayflix55"
+              aria-label="GitHub"
+              class="text-red-500 hover:text-white"
+            >
+              <i
+                class="fa-brands fa-github text-3xl transition-transform transform hover:scale-125 duration-400"
+              ></i>
+            </a>
+            <a
+              href="https://x.com/web3rayflix?t=P3YbITH5vzAHOWA8clK5GQ&s=09"
+              aria-label="Twitter"
+              class="text-3xl text-red-500 hover:text-white"
+            >
+              <i
+                class="fa-brands fa-x-twitter transform hover:scale-125 transition-transform duration-400"
+              ></i>
+            </a>
+            <a
+              href="https://www.instagram.com/web3rayflix?igsh=YzljYTk1ODg3Zg=="
+              aria-label="Instagram"
+              class="text-3xl hover:text-yellow-500 text-red-500"
+            >
+              <i
+                class="fa-brands fa-instagram hover:scale-125 transition-transform duration-400"
+              ></i>
+            </a>
+          </div>
+            <a href="mailto:rayflix55@gmail.com?subject=Interested in Hiring&body=Hi Rayflix,%0D%0A%0D%0AI'm interested in discussing potential work opportunities with you.%0D%0A%0D%0ABest regards" 
+              class="border-solid border-2 border-red-500 w-80 h-10 mt-5 rounded-md bg-black text-red-500 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110 inline-block text-center leading-10 no-underline">
+              Hire <span></span> Me
+            </a>
+        </div>
+      </div>
+   
+</section>
+    
+
+    <!-- About Section -->
+    <section id="second_section">
+      
+      <h2 class="text-center underline decoration-double mb-10 mt-20 text-red-400  max-[480px]:text-sm" id="about">About Me</h2>
+      <div class="flex flex-row items-center justify-between w-full max-[480px]:flex-col " >
+        <div class="ml-20">
+        <img src="about-me-removebg-preview.png" alt="Rayflix" class="bg-transparent opacity-92  size-full object-cover w-86 h-130 mb-10   shadow-none hover:shadow-[0_10px_30px_rgba(255,0,0,0.5)] transition-transform hover:scale-90 duration-400  max-[480px]:flex-col  max-[480px]:size-2/3  max-[480px]:justify-center" />
+        </div>
+        <div class="flex flex-col justify-center ml-5">
+        <h1 class="text-4xl font-bold mb-4"id="passion">Coding Is My Passion</h1>
+        <p class="text-sm italic">
+          I am a passionate software developer with a strong focus on web
+          development. <br> My journey in coding began at a young age, and it has
+          been a fulfilling adventure ever since. <br> I love creating innovative
+          solutions that make a difference in people's lives.
+        </p>
+        
+          <button class="border-solid border-2 border-red-500 w-80 mt-5 h-10 rounded-md bg-black text-red-500 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110">
+          Download <span></span> CV
+          </button>
+        
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="third_section">
+        <div class="text-center underline decoration-double mb-10 mt-10 text-red-400" id="about"><span>My Skills</span></div>
+      <div class="flex flex-row   items-center   max-[480px]:flex-col  mt-10 mb-50" id="skills">
+
+        <div class="ml-5">
+          <div class="text">
+            <div class="topicc">Skill Reflects Our Knowledge</div>
+            <p class="mb-4 mt-4 ">
+              Skills are the foundation of our expertise. <br>  They reflect our
+              knowledge and experience in various domains. <br> Whether it's coding,
+              design, or problem-solving, <br> skills empower us to tackle challenges
+              and create innovative solutions.
+            </p>
+            <div class="flex flex-row  ml-30">
+              <div class="text-4xl text-red-500" id="ten">10</div>
+              <div class="italic text-sm mt-3">Years Of <br />Experience</div>
+            </div>
+          </div>
+        </div>
+        <div class=" max-[480px]:flex-col  max-[480px]:m-20 ml-50 ">
+     <div class="flex flex-row justify-between  space-x-50 ">
+     <div class="box">
+            
+            <i class="fa-brands fa-html5 text-8xl   " style="color: #f5290a;"></i>
+            <div class="text-4xl text-red-500 italic transition-transform hover:scale-125 duration-400">100%</div>
+          </div>
+          <div class="box">
+            <i class="fa-brands fa-css3-alt text-8xl  transition-transform hover:scale-125 duration-400" style="color: #0e0bd0;"></i>
+            <div class="text-4xl text-red-500 italic">90%</div>
+          </div>
+     </div>
+        <div class="flex flex-row justify-between space-x-50">
+  <div class="box">
+            <i class="fa-brands fa-js text-8xl  transition-transform  hover:scale-125 duration-400" style="color: #FFD43B;"></i>
+            <div class="text-4xl text-red-500 italic">85%</div>
+          </div>
+          <div class="box">
+            <i class="fa-brands fa-react text-8xl  transition-transform hover:scale-125 duration-400" style="color: #61DAFB;"></i>
+            <div class="text-4xl text-red-500 italic">85%</div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Services Section -->
+    <section id="fourth_section">
+      <div class="content">
+      <div class="text-center underline decoration-double mb-30 text-red-400" id="about">
+        <span>My Services</span>
+      </div>
+      <div class="boxes">
+        <div class="flex flex-col items-center space-y-4 md:flex-row md:justify-center md:space-x-40 md:space-y-0 mb-10 px-4">
+        <div class="w-full md:w-1/5 text-center rounded-md bg-red-500 text-white p-4 duration-400 transition-transform transform hover:bg-black hover:text-red-500 hover:scale-110">
+          <i class="fa-solid fa-desktop text-white text-3xl"></i>
+          <div class="topic mt-2">Web Development</div>
+          <p class="mt-2">I create responsive and user-friendly websites using the latest web technologies.</p>
+        </div>
+        <div class="w-full md:w-1/5 text-center rounded-md bg-black text-red-500 p-4 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110">
+          <i class="fa-solid fa-mobile text-3xl"></i>
+          <div class="topic mt-2">Mobile Development</div>
+          <p class="mt-2">I develop mobile applications that provide a seamless user experience on various devices.</p>
+        </div>
+        <div class="w-full md:w-1/5 text-center rounded-md bg-red-500 text-white p-4 duration-400 transition-transform transform hover:bg-black hover:text-red-500 hover:scale-110">
+          <i class="fa-solid fa-pen text-white text-3xl"></i>
+          <div class="topic mt-2">Content Writing</div>
+          <p class="mt-2">I create engaging and informative content that resonates with the target audience.</p>
+        </div>
+        </div>
+
+        <div class="flex flex-col items-center space-y-4 md:flex-row md:justify-center md:space-x-40 md:space-y-0 px-4">
+        <div class="w-full md:w-1/5 text-center rounded-md bg-black text-red-500 p-4 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110">
+          <i class="fa-solid fa-chart-line text-3xl"></i>
+          <div class="topic mt-2">SEO Optimization</div>
+          <p class="mt-2">I optimize websites to rank higher in search engine results and drive organic traffic.</p>
+        </div>
+        <div class="w-full md:w-1/5 text-center rounded-md bg-red-500 text-white p-4 duration-400 transition-transform transform hover:bg-black hover:text-red-500 hover:scale-110">
+          <i class="fa-solid fa-cloud text-3xl"></i>
+          <div class="topic mt-2">Cloud Computing</div>
+          <p class="mt-2">I provide cloud computing solutions to help businesses scale and manage their IT resources efficiently.</p>
+        </div>
+        <div class="w-full md:w-1/5 text-center rounded-md bg-black text-red-500 p-4 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110">
+          <i class="fa-solid fa-cogs text-3xl"></i>
+          <div class="topic mt-2">DevOps Services</div>
+          <p class="mt-2">I implement DevOps practices to streamline development and deployment processes.</p>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="fifth_section">
+      <div class="text-center underline decoration-double mb-10 mt-20 text-red-400" id="about">
+      <span>Contact Me</span>
+      </div>
+      <div class="flex justify-center items-center mb-10">
+      <form action="https://formsubmit.co/rayflix55@gmail.com" method="POST" class="w-1/2 p-8 rounded-lg bg-black border-2 border-red-500 max-[480px]:w-full max-[480px]:mx-4">
+        <input type="hidden" name="_next" value="https://yoursite.com/thanks.html">
+        <input type="hidden" name="_subject" value="New Portfolio Contact!">
+        
+        <div class="mb-4">
+        <label for="name" class="block text-red-500 mb-2 max-[480px]:text-sm">Name *</label>
+        <input type="text" name="name" id="name" required class="w-full p-2 rounded bg-gray-800 text-white border border-red-500 focus:outline-none focus:border-red-700 max-[480px]:text-sm">
+        </div>
+        
+        <div class="mb-4">
+        <label for="email" class="block text-red-500 mb-2 max-[480px]:text-sm">Email *</label>
+        <input type="email" name="email" id="email" required class="w-full p-2 rounded bg-gray-800 text-white border border-red-500 focus:outline-none focus:border-red-700 max-[480px]:text-sm">
+        </div>
+        
+        <div class="mb-4">
+        <label for="description" class="block text-red-500 mb-2 max-[480px]:text-sm">Job Description *</label>
+        <textarea name="message" id="description" rows="4" required class="w-full p-2 rounded bg-gray-800 text-white border border-red-500 focus:outline-none focus:border-red-700 max-[480px]:text-sm"></textarea>
+        </div>
+        
+        <button type="submit" class="border-solid border-2 border-red-500 w-80 h-10 mt-5 rounded-md bg-black text-red-500 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110">
+        Submit
+        </button>
+      </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+  </script>
+
+
+
+
+
+
+  </body>
+</html>
