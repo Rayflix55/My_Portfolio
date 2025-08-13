@@ -1,127 +1,264 @@
 console.log("JS is connected!");
 
-// Smooth Scrolling for internal anchor links
-const navLinks = document.querySelectorAll("a[href^='#']");
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
 
-navLinks.forEach(link => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 50,
-        behavior: "smooth"
-      });
+  
+    
+    // Mobile menu functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    
+    if (menuToggle && mobileMenu && hamburgerIcon) {
+        menuToggle.addEventListener('click', function() {
+            // Toggle the menu visibility
+            if (mobileMenu.classList.contains('opacity-0')) {
+                // Show menu
+                mobileMenu.classList.remove('opacity-0', 'invisible', 'max-h-0');
+                mobileMenu.classList.add('opacity-100', 'visible', 'max-h-96', 'flex');
+                // Change hamburger to X
+                hamburgerIcon.classList.remove('fa-bars');
+                hamburgerIcon.classList.add('fa-times');
+            } else {
+                // Hide menu
+                mobileMenu.classList.remove('opacity-100', 'visible', 'max-h-96', 'flex');
+                mobileMenu.classList.add('opacity-0', 'invisible', 'max-h-0');
+                // Change X back to hamburger
+                hamburgerIcon.classList.remove('fa-times');
+                hamburgerIcon.classList.add('fa-bars');
+            }
+        });
     }
-  });
-});
 
-// Highlight active nav link on scroll
-const sectionIds = Array.from(navLinks).map(link => link.getAttribute("href"));
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY + 100;
+    // Smooth Scrolling for internal anchor links
+    const navLinks = document.querySelectorAll("a[href^='#']");
+    
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
 
-  sectionIds.forEach(id => {
-    const section = document.querySelector(id);
-    if (section) {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const link = document.querySelector(`a[href='${id}']`);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: "smooth"
+                });
+                
+                // Close mobile menu after clicking a link
+                if (mobileMenu && mobileMenu.classList.contains('opacity-100')) {
+                    mobileMenu.classList.remove('opacity-100', 'visible', 'max-h-96', 'flex');
+                    mobileMenu.classList.add('opacity-0', 'invisible', 'max-h-0');
+                    if (hamburgerIcon) {
+                        hamburgerIcon.classList.remove('fa-times');
+                        hamburgerIcon.classList.add('fa-bars');
+                    }
+                }
+            }
+        });
+    });
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        link.classList.add("text-white", "underline", "font-bold");
-        link.classList.remove("text-red-500");
-      } else {
-        link.classList.remove("text-white", "underline", "font-bold");
-        link.classList.add("text-red-500");
-      }
+    // Custom animations per section
+    const animationConfigs = [
+        { selector: "#first-section", hidden: ["translate-x-40"], visible: ["translate-x-0"] },
+        { selector: "#first_section", hidden: ["-translate-x-40"], visible: ["translate-x-0"] },
+        { selector: "#second_section", hidden: ["translate-x-40"], visible: ["translate-x-0"] },
+        { selector: "#third_section .half", hidden: ["-translate-x-40"], visible: ["translate-x-0"] },
+        { selector: "#third_section .half-right", hidden: ["translate-x-40"], visible: ["translate-x-0"] },
+        { selector: "#fourth_section", hidden: ["scale-0", "opacity-0"], visible: ["scale-100", "opacity-100"] },
+        { selector: "#fifth_section", hidden: ["translate-y-40"], visible: ["translate-y-0"] }
+    ];
+
+    animationConfigs.forEach(config => {
+        const elements = document.querySelectorAll(config.selector);
+
+        elements.forEach((el, index) => {
+            if (el) {
+                el.classList.add("opacity-0", ...config.hidden, "transition-all", "duration-700", "ease-out");
+                el.style.transitionDelay = `${index * 150}ms`;
+
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            el.classList.remove("opacity-0", ...config.hidden);
+                            el.classList.add("opacity-100", ...config.visible);
+                        } else {
+                            el.classList.remove("opacity-100", ...config.visible);
+                            el.classList.add("opacity-0", ...config.hidden);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                observer.observe(el);
+            }
+        });
+    });
+
+    // Highlight active nav link on scroll
+    const sectionIds = Array.from(navLinks).map(link => link.getAttribute("href")).filter(id => id);
+    
+    function updateActiveNavLink() {
+        const scrollPosition = window.scrollY + 100;
+
+        sectionIds.forEach(id => {
+            const section = document.querySelector(id);
+            if (section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const link = document.querySelector(`a[href='${id}']`);
+
+                if (link && scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    // Remove active classes from all links
+                    navLinks.forEach(navLink => {
+                        navLink.classList.remove("text-white", "underline", "font-bold");
+                        navLink.classList.add("text-red-500");
+                    });
+                    
+                    // Add active classes to current link
+                    link.classList.add("text-white", "underline", "font-bold");
+                    link.classList.remove("text-red-500");
+                }
+            }
+        });
     }
-  });
-});
 
-// Custom animations per section
-const animationConfigs = [
-  { selector: "#first-section", hidden: ["translate-x-40"], visible: ["translate-x-0"] },
-  { selector: "#first_section", hidden: ["-translate-x-40"], visible: ["translate-x-0"] },
-  { selector: "#second_section", hidden: ["translate-x-40"], visible: ["translate-x-0"] },
-  { selector: "#third_section .half", hidden: ["-translate-x-40"], visible: ["translate-x-0"] },
-  { selector: "#third_section .half-right", hidden: ["translate-x-40"], visible: ["translate-x-0"] },
-  { selector: "#fourth_section", hidden: ["scale-0", "opacity-0"], visible: ["scale-100", "opacity-100"] },
-  { selector: "#fifth_section", hidden: ["translate-y-40"], visible: ["translate-y-0"] }
-];
+    // Initialize AOS if available
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            once: false,
+            mirror: true,
+            offset: 0,
+            duration: 1000,
+            easing: 'ease-out'
+        });
+        AOS.refreshHard();
+    }
 
-animationConfigs.forEach(config => {
-  const elements = document.querySelectorAll(config.selector);
+    // Initialize Particles.js if available
+    if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 100, // Reduced from 2000 for better performance
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#ef4444'
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false
+                },
+                size: {
+                    value: 3,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#ef4444',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    }
 
-  elements.forEach((el, index) => {
-    el.classList.add("opacity-0", ...config.hidden, "transition-all", "duration-700", "ease-out");
-    el.style.transitionDelay = `${index * 150}ms`;
+    // Sidebar functionality
+    const sidebarSections = ['first_section', 'second_section', 'third_section', 'fourth_section', 'fifth_section'];
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          el.classList.remove("opacity-0", ...config.hidden);
-          el.classList.add("opacity-100", ...config.visible);
-        } else {
-          el.classList.remove("opacity-100", ...config.visible);
-          el.classList.add("opacity-0", ...config.hidden);
+    function scrollToSection(sectionId) {
+        const targetElement = document.getElementById(sectionId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 50,
+                behavior: "smooth"
+            });
         }
-      });
-    }, { threshold: 0.1 });
-
-    observer.observe(el);
-  });
-});
-
-// Hamburger menu toggle
-const menuToggle = document.getElementById('menu-toggle');
-const hamburgerIcon = document.getElementById('hamburger-icon');
-const closeIcon = document.getElementById('close-icon');
-const mobileMenu = document.getElementById('mobile-menu');
-
-menuToggle.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-  hamburgerIcon.classList.toggle('hidden');
-  closeIcon.classList.toggle('hidden');
-});
-
-// Light 3D Particle Background
-particlesJS("particles-js", {
-  particles: {
-    number: {
-      value: 200, // more white dots
-      density: { enable: true, value_area: 800 }
-    },
-    color: { value: "#ffffff" },
-    shape: { type: "circle" },
-    opacity: {
-      value: 0.5,
-      random: false
-    },
-    size: {
-      value: 3,
-      random: true
-    },
-    move: {
-      enable: true,
-      speed: 2,
-      direction: "none",
-      out_mode: "out"
     }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: { enable: true, mode: "repulse" },
-      onclick: { enable: true, mode: "push" },
-      resize: true
-    },
-    modes: {
-      repulse: { distance: 100, duration: 0.4 },
-      push: { particles_nb: 4 }
+
+    function updateSidebarActiveState() {
+        const scrollPosition = window.scrollY + 100;
+        
+        sidebarSections.forEach((sectionId, index) => {
+            const section = document.getElementById(sectionId);
+            const button = document.querySelector(`[data-section="${sectionId}"]`);
+            
+            if (section && button) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    // Remove active class from all sidebar icons
+                    document.querySelectorAll('.sidebar-icon').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    button.classList.add('active');
+                    
+                    // Update progress bar
+                    const progressBar = document.getElementById('progress-bar');
+                    const progressText = document.getElementById('progress-text');
+                    
+                    if (progressBar && progressText) {
+                        const progressPercent = ((index + 1) / sidebarSections.length) * 100;
+                        progressBar.style.width = progressPercent + '%';
+                        progressText.textContent = `${index + 1}/${sidebarSections.length}`;
+                    }
+                }
+            }
+        });
     }
-  },
-  retina_detect: true
+
+    // Event listeners
+    window.addEventListener('scroll', function() {
+        updateActiveNavLink();
+        updateSidebarActiveState();
+    });
+    
+    // Initial calls
+    updateActiveNavLink();
+    updateSidebarActiveState();
+    
+    // Make scrollToSection globally available
+    window.scrollToSection = scrollToSection;
 });

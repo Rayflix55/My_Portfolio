@@ -5,6 +5,65 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+/* Sidebar Styles */
+.sidebar-icon {
+  transition: all 0.3s ease;
+}
+.sidebar-icon:hover {
+  transform: scale(1.1);
+}
+.sidebar-icon.active {
+  background: #dc2626;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+}
+.tooltip {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+.sidebar-icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.progress-bar {
+  transition: width 0.3s ease;
+}
+
+/* Add margin to main content to account for sidebar */
+body {
+  margin-left: 64px;
+}
+
+/* Hide sidebar margin on mobile */
+@media (max-width: 700px) {
+  body {
+    margin-left: 0;
+  }
+  .fixed.left-0.w-16 {
+    display: none;
+  }
+}
+
+#first-section {
+  position: fixed; /* Makes navbar stick to top */
+  height: auto;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0); /* More transparent for glass effect */
+  backdrop-filter: blur(20px); /* Increased blur for better glass effect */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  z-index: 1000;
+  transition: all 0.3s ease; /* Smooth transitions */
 }
 
 #Logo {
@@ -17,6 +76,7 @@ body {
   letter-spacing: -0.05em;
   text-transform: uppercase;
   color: #ff0000; /* Red color */
+  text-align: left;
 }
 #ray {
   font-family: "Bitcount Grid Single", system-ui;
