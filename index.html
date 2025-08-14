@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <body class="bg-black text-white font-['Ubuntu'] overflow-x-hidden">
+  <body class="bg-black text-white font-['Ubuntu'] overflow-x-hidden overflow-y-hidden">
   
     <!-- Icon Sidebar -->
 <div class="fixed left-0 top-0 w-16 h-full bg-black bg-opacity-90 backdrop-blur-sm border-r border-red-500/30 z-50 flex flex-col">
@@ -89,30 +89,29 @@
   </div>
 </div>
    <div id="particles-js" class="fixed  h-full "></div>
+<section id="first-section" class="p-4 md:hidden">
+  <nav class="flex justify-between items-center mt-4 mb-4  overflow-x-hidden">
+    <!-- Logo -->
+    <h1 class="text-3xl text-red-500" id="Logo" data-aos="zoom-in" data-aos-duration="1500">
+      RAYFLIX
+    </h1>
 
- <section id="first-section" class="md:hidden mt-4 p-4">
-        <!-- Navbar -->
-        <nav class="flex justify-between items-center w-full">
-            <!-- Logo -->
-            <h1 class="text-3xl text-red-500 opacity-0  max-h-0  transition-all duration-300 ease-in-out" id="Logo" data-aos="zoom-in" data-aos-duration="1500">
-                RAYFLIX
-            </h1>
-            
-            <!-- Hamburger / Close Icon -->
-            <div class="text-white text-2xl cursor-pointer" id="menu-toggle">
-                <i class="fas fa-bars" id="hamburger-icon"></i>
-            </div>
-        </nav>
-        
-        <!-- Mobile Nav Dropdown -->
-        <div id="mobile-menu" class="flex-col space-y-4 items-center px-6 text-red-500 opacity-0 invisible max-h-0 overflow-hidden transition-all duration-300 ease-in-out mt-4">
-            <a href="#first_section" class="block hover:text-white">Home</a>
-            <a href="#second_section" class="block hover:text-white">About Me</a>
-            <a href="#third_section" class="block hover:text-white">My Skills</a>
-            <a href="#fourth_section" class="block hover:text-white">My Services</a>
-            <a href="#fifth_section" class="block hover:text-white">Contact</a>
-        </div>
-    </section>
+    <!-- Hamburger / Close Icon -->
+    <div class="md:hidden text-white text-2xl cursor-pointer" id="menu-toggle">
+      <i class="fas fa-bars" id="hamburger-icon"></i>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Dropdown -->
+  <div id="mobile-menu" class="md:hidden flex-col space-y-4 px-4 text-red-500 items-center opacity-0 invisible transition-all duration-300 ease-in-out">
+    <a href="#first_section" class="block hover:text-white">Home</a>
+    <a href="#second_section" class="block hover:text-white">About Me</a>
+    <a href="#third_section" class="block hover:text-white">My Skills</a>
+    <a href="#fourth_section" class="block hover:text-white">My Services</a>
+    <a href="#fifth_section" class="block hover:text-white">Contact</a>
+  </div>
+</section>
+
 
 
 
@@ -236,7 +235,7 @@
           </div>
         </div>
         <div class=" max-[480px]:flex-col max-[480px]:items-center max-[480px]:ml-0 lg:ml-50 mt-4 md:m-5  ">
-     <div class="flex flex-row justify-between  space-x-50 max-[480px]:space-x-10 ">
+     <div class="flex flex-row justify-between  md:space-x-50 max-[480px]:space-x-10 ">
      <div class="box">
             
             <i class="fa-brands fa-html5 text-8xl   " style="color: #f5290a;" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150"></i>
@@ -247,7 +246,7 @@
             <div class="text-4xl text-red-500 italic" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div>
           </div>
      </div>
-        <div class="flex flex-row justify-between space-x-50 max-[480px]:space-x-10">
+        <div class="flex flex-row justify-between md:space-x-50 max-[480px]:space-x-10">
   <div class="box">
             <i class="fa-brands fa-js text-8xl  transition-transform  hover:scale-125 duration-400" style="color: #FFD43B; " data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450"></i>
             <div class="text-4xl text-red-500 italic" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">85%</div>
@@ -267,7 +266,7 @@
         <span>My Services</span>
       </div>
       <div class="md:w-full">
-        <div class="flex flex-row  justify-center space-y-4 space-x-40 px-4 max-[480px]:space-y-4  max-[480px]:flex-col max-[480px]:w-full md:w-full max-[768px]:w-full md:flex-col lg:flex-row   ">
+        <div class="flex flex-row  justify-center space-y-4 md:space-x-40 px-4 max-[480px]:space-y-4  max-[480px]:flex-col max-[480px]:w-full md:w-full max-[768px]:w-full md:flex-col lg:flex-row   ">
         <div class=" w-full  text-center rounded-md bg-red-500 text-white p-4 duration-400 transition-transform transform hover:bg-black hover:text-red-500 hover:scale-110" id="fourth_section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           <i class="fa-solid fa-desktop text-white text-3xl"></i>
           <div class="topic mt-2">Web Development</div>
