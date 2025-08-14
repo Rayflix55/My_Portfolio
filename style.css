@@ -51,7 +51,8 @@ body {
   }
 }
 
-#first-section {
+@media screen and (max-width: 600px) {
+ #first-section {
   position: fixed; /* Makes navbar stick to top */
   height: auto;
   top: 0;
@@ -63,6 +64,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
   z-index: 1000;
   transition: all 0.3s ease; /* Smooth transitions */
+}
 }
 
 #Logo {
