@@ -123,11 +123,11 @@ document.addEventListener("DOMContentLoaded", function () {
       hidden: ["translate-x-40"],
       visible: ["translate-x-0"],
     },
-    {
-      selector: "#fourth_section",
-      hidden: ["scale-0", "opacity-0"],
-      visible: ["scale-100", "opacity-100"],
-    },
+    // {
+    //   selector: "#fourth_section",
+    //   hidden: ["scale-0", "opacity-0"],
+    //   visible: ["scale-100", "opacity-100"],
+    // },
     {
       selector: "#fifth_section",
       hidden: ["translate-y-40"],
@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentCharIndex = 0;
     let isDeleting = false;
     let typeSpeed = 100; // Typing speed in milliseconds
-    let deleteSpeed = 50; // Deleting speed in milliseconds
+    let deleteSpeed = 150; // Deleting speed in milliseconds
     let pauseTime = 2000; // Pause time between roles
 
     function typeWriter() {
