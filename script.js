@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Close mobile menu after clicking a link
         if (mobileMenu && mobileMenu.classList.contains("opacity-100")) {
-          n;
+          
           if (navbar) {
             navbar.classList.remove("menu-open");
           }
