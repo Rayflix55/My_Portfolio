@@ -4,30 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rayflixthetechbro</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/7401a24b2f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <body class="bg-black text-white font-['Ubuntu'] ">
+    <script src="https://kit.fontawesome.com/7401a24b2f.js" crossorigin="anonymous"></script>
+  </head>
+ <body class="bg-black text-white font-['Ubuntu'] ">
   
-    
+
 <div class="fixed left-0 top-0 w-16 h-full bg-black bg-opacity-90 backdrop-blur-sm border-r border-red-500/30 z-50 flex flex-col">
- 
+  
   <div class="p-4 border-b border-red-500/30">
     <div class="w-8 h-8 bg-gradient-to-r from-red-500 to-red-700 rounded-lg flex items-center justify-center">
       <span class="text-white font-bold text-sm">R</span>
     </div>
   </div>
 
-  <!-- Navigation Icons -->
+  
   <nav class="flex-1 p-2 space-y-1">
     <div class="relative group">
       <button onclick="scrollToSection('first_section')" class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative" data-section="first_section">
@@ -80,7 +75,7 @@
     </div>
   </nav>
 
-  <!-- Progress Indicator -->
+ 
   <div class="p-2 border-t border-red-500/30">
     <div class="w-full bg-gray-700 rounded-full h-1">
       <div id="progress-bar" class="progress-bar bg-red-500 h-1 rounded-full" style="width: 20%"></div>
@@ -91,18 +86,18 @@
    <div id="particles-js" class="fixed  h-full "></div>
 <section id="first-section" class="p-4 md:hidden">
   <nav class="flex justify-between items-center mt-4 mb-4  overflow-x-hidden">
-    <!-- Logo -->
+   
     <h1 class="text-3xl text-red-500" id="Logo" data-aos="zoom-in" data-aos-duration="1500">
       RAYFLIX
     </h1>
 
-    <!-- Hamburger / Close Icon -->
+    
     <div class="md:hidden text-white text-2xl cursor-pointer" id="menu-toggle">
       <i class="fas fa-bars" id="hamburger-icon"></i>
     </div>
   </nav>
 
-  <!-- Mobile Nav Dropdown -->
+ 
   <div id="mobile-menu" class="md:hidden flex-col space-y-4 px-4 text-red-500 items-center opacity-0 invisible transition-all duration-300 ease-in-out">
     <a href="#first_section" class="block hover:text-white">Home</a>
     <a href="#second_section" class="block hover:text-white">About Me</a>
@@ -115,11 +110,11 @@
 
 
 
-<!-- Home -->
+
     <section id="first_section" class="overflow-x-hidden">
       <div class="flex lg:justify-between mt-10 max-[480px]:flex-col md:flex-col lg:flex-row  items-center  ">
         <div class="ml-20">
-          <!-- Lg for large screens, sm for mobile phones and md for tablets -->
+     
           <img src="Web3_Rayflix3.png" alt="Rayflix" class="bg-transparent opacity-92 lg:size-full object-cover lg:w-86 lg:h-130 mb-10 sm:mt-10 shadow-none hover:shadow-[0_10px_30px_rgba(255,0,0,0.5)] transition-transform hover:scale-90 duration-400 max-[480px]:flex-col  max-[480px]:size-2/3 max-[480px]:justify-center max-[480px]:mt-5 md:size-2/3 md:items-center lg:mb-50 " data-aos="flip-right" data-aos-duration="1500" />
         </div>
         <div class="lg:mt-40 flex flex-col justify-center  mr-30 ml-30">
@@ -185,7 +180,6 @@
 </section>
     
 
-    <!-- About Section -->
     <section id="second_section" class="overflow-x-hidden">
       
       <h2 class="text-center underline decoration-double text-red-400 lg:mt-4 mb-4 max-[480px]:text-sm " id="about" data-aos="fade-up" data-aos-duration="1500">About Me</h2>
@@ -214,7 +208,7 @@
       
     </section>
 
-    <!-- My Skills Section -->
+  
     <section id="third_section" class="overflow-x-hidden">
         <div class="text-center underline decoration-double md:mb-50 mt-10 lg:mb-20 text-red-400" id="about" data-aos="fade-up" data-aos-duration="1500"><span>My Skills</span></div>
       <div class="flex flex-row   items-center   max-[480px]:flex-col md:flex-row lg:flex-row  mt-30 mb-50" id="skills">
@@ -260,7 +254,7 @@
     </section>
 
    
-   <!-- My Services Section -->
+  
     <section id="fourth_section" class="overflow-x-hidden">
       <div class="container mx-auto px-4">
         <div class="text-center underline decoration-double mb-12 text-red-400" id="about" data-aos="fade-up" data-aos-duration="1200">
@@ -268,7 +262,7 @@
         </div>
         
         <div class="max-w-6xl mx-auto">
-          <!-- First Row -->
+        
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 mb-8">
             <div class="text-center rounded-md bg-red-500 text-white p-6 duration-400 transition-transform transform hover:bg-black hover:text-red-500 hover:scale-110" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
               <i class="fa-solid fa-desktop text-white text-3xl mb-4"></i>
@@ -289,7 +283,7 @@
             </div>
           </div>
 
-          <!-- Second Row -->
+        
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15">
             <div class="text-center rounded-md bg-black text-red-500 p-6 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
               <i class="fa-solid fa-chart-line text-3xl mb-4"></i>
@@ -314,14 +308,14 @@
     </section>
     
 
-    <!-- Contact Me Section -->
+   
     <section id="fifth_section" class="overflow-x-hidden">
       <div class="text-center underline decoration-double mb-10 mt-20 text-red-400 md:justify-center" id="about" data-aos="fade-up" data-aos-duration="1500" >
       <span>Contact Me</span>
       </div>
       <div class="flex justify-center items-center mb-10 ">
       <form action="https://formsubmit.co/rayflix55@gmail.com" method="POST" class="md:w-full lg:w-3/4 p-8 rounded-lg bg-black border-2 border-red-500 max-[480px]:w-full max-[480px]:mx-4" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
-    <!-- Fixed FormSubmit Configuration -->
+ 
     <input type="hidden" name="_next" value="https://rayflixthetechbro.vercel.app/thanks.html">
     <input type="hidden" name="_subject" value="New Portfolio Contact!">
     <input type="hidden" name="_captcha" value="false">
@@ -350,15 +344,17 @@
       </form>
       </div>
     </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="script.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ offset: 0 });
-  </script>
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
 
 
 
 
   </body>
+</html>

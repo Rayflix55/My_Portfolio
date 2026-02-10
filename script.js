@@ -1,23 +1,17 @@
 console.log("JS is connected!");
-
-// Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Reset menu state on page load - MOVED TO TOP AND REMOVED DUPLICATE
   const navbar = document.querySelector("#first-section");
   const mobileMenu = document.getElementById("mobile-menu");
 
-  // Reset navbar classes
   if (navbar) {
     navbar.classList.remove("menu-open", "expanded");
   }
 
-  // Reset mobile menu to closed state
   if (mobileMenu) {
     mobileMenu.classList.remove("opacity-100", "visible", "max-h-96", "flex");
     mobileMenu.classList.add("opacity-0", "invisible", "max-h-0");
   }
 
-  // Reset hamburger icon
   const hamburgerIcon = document.getElementById("hamburger-icon");
   if (hamburgerIcon) {
     hamburgerIcon.classList.remove("fa-times");
@@ -29,26 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (menuToggle && mobileMenu && hamburgerIcon) {
     menuToggle.addEventListener("click", function () {
-      // Toggle the navbar background expansion
       if (navbar) {
         navbar.classList.toggle("menu-open");
       }
 
-      // Toggle the menu visibility
       if (mobileMenu.classList.contains("opacity-0")) {
-        // Show menu
         mobileMenu.classList.remove("opacity-0", "invisible", "max-h-0");
         mobileMenu.classList.add("opacity-100", "visible", "max-h-96", "flex");
-        // Change hamburger to X
+
         hamburgerIcon.classList.remove("fa-bars");
         hamburgerIcon.classList.add("fa-times");
       } else {
-        // Hide menu
         mobileMenu.classList.remove(
           "opacity-100",
           "visible",
           "max-h-96",
-          "flex"
+          "flex",
         );
         mobileMenu.classList.add("opacity-0", "invisible", "max-h-0");
         // Change X back to hamburger
@@ -58,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Smooth Scrolling for internal anchor links
   const navLinks = document.querySelectorAll("a[href^='#']");
 
   navLinks.forEach((link) => {
@@ -75,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Close mobile menu after clicking a link
         if (mobileMenu && mobileMenu.classList.contains("opacity-100")) {
-          // Remove navbar expansion
+          n;
           if (navbar) {
             navbar.classList.remove("menu-open");
           }
@@ -84,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "opacity-100",
             "visible",
             "max-h-96",
-            "flex"
+            "flex",
           );
           mobileMenu.classList.add("opacity-0", "invisible", "max-h-0");
           if (hamburgerIcon) {
@@ -123,11 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
       hidden: ["translate-x-40"],
       visible: ["translate-x-0"],
     },
-    // {
-    //   selector: "#fourth_section",
-    //   hidden: ["scale-0", "opacity-0"],
-    //   visible: ["scale-100", "opacity-100"],
-    // },
+
     {
       selector: "#fifth_section",
       hidden: ["translate-y-40"],
@@ -145,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ...config.hidden,
           "transition-all",
           "duration-700",
-          "ease-out"
+          "ease-out",
         );
         el.style.transitionDelay = `${index * 150}ms`;
 
@@ -161,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
               }
             });
           },
-          { threshold: 0.1 }
+          { threshold: 0.1 },
         );
 
         observer.observe(el);
@@ -189,13 +174,11 @@ document.addEventListener("DOMContentLoaded", function () {
           scrollPosition >= sectionTop &&
           scrollPosition < sectionTop + sectionHeight
         ) {
-          // Remove active classes from all links
           navLinks.forEach((navLink) => {
             navLink.classList.remove("text-white", "underline", "font-bold");
             navLink.classList.add("text-red-500");
           });
 
-          // Add active classes to current link
           link.classList.add("text-white", "underline", "font-bold");
           link.classList.remove("text-red-500");
         }
@@ -318,13 +301,11 @@ document.addEventListener("DOMContentLoaded", function () {
           scrollPosition >= sectionTop &&
           scrollPosition < sectionTop + sectionHeight
         ) {
-          // Remove active class from all sidebar icons
           document.querySelectorAll(".sidebar-icon").forEach((btn) => {
             btn.classList.remove("active");
           });
           button.classList.add("active");
 
-          // Update progress bar
           const progressBar = document.getElementById("progress-bar");
           const progressText = document.getElementById("progress-text");
 
@@ -339,13 +320,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Event listeners
   window.addEventListener("scroll", function () {
     updateActiveNavLink();
     updateSidebarActiveState();
   });
 
-  // Initial calls
   updateActiveNavLink();
   updateSidebarActiveState();
 
@@ -361,7 +340,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!typewriterElement) return;
 
-    // Remove AOS animation to avoid conflicts
     typewriterElement.removeAttribute("data-aos");
     typewriterElement.removeAttribute("data-aos-duration");
 
@@ -376,10 +354,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const currentRole = roles[currentRoleIndex];
 
       if (isDeleting) {
-        // Deleting characters
         typewriterElement.textContent = currentRole.substring(
           0,
-          currentCharIndex - 1
+          currentCharIndex - 1,
         );
         currentCharIndex--;
 
@@ -392,10 +369,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(typeWriter, deleteSpeed);
       } else {
-        // Typing characters
         typewriterElement.textContent = currentRole.substring(
           0,
-          currentCharIndex + 1
+          currentCharIndex + 1,
         );
         currentCharIndex++;
 
@@ -409,11 +385,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Start the typewriter effect
     typeWriter();
   }
 
-  // Inject CSS for blinking cursor effect
   function injectTypewriterCSS() {
     const typewriterCSS = `
             #soft::after {
@@ -434,10 +408,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(style);
   }
 
-  // Initialize typewriter effect
   injectTypewriterCSS();
   initTypewriterEffect();
 
-  // Make scrollToSection globally available
   window.scrollToSection = scrollToSection;
 });
