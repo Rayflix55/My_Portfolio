@@ -346,8 +346,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentRoleIndex = 0;
     let currentCharIndex = 0;
     let isDeleting = false;
-    let typeSpeed = 100; // Typing speed in milliseconds
-    let deleteSpeed = 150; // Deleting speed in milliseconds
+    let typeSpeed = 50; // Typing speed in milliseconds
+    let deleteSpeed = 50; // Deleting speed in milliseconds
     let pauseTime = 2000; // Pause time between roles
 
     function typeWriter() {
