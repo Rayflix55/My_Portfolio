@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,128 +6,194 @@
     <title>rayflixthetechbro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/7401a24b2f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7401a24b2f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
- <body class="bg-black text-white font-['Ubuntu'] min-h-screen">
-  
-
-<div class="fixed left-0 top-0 w-16 h-full bg-black bg-opacity-90 backdrop-blur-sm border-r border-red-500/30 z-50 flex flex-col">
-  
-  <div class="p-4 border-b border-red-500/30">
-    <div class="w-8 h-8 bg-gradient-to-r from-red-500 to-red-700 rounded-lg flex items-center justify-center">
-      <span class="text-white font-bold text-sm">R</span>
-    </div>
-  </div>
-
-  
-  <nav class="flex-1 p-2 space-y-1">
-    <div class="relative group">
-      <button onclick="scrollToSection('first_section')" class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative" data-section="first_section">
-        <i class="fas fa-home text-lg"></i>
-        <div class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50">
-          Home
-          <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"></div>
+  <body class="bg-black text-white font-['Ubuntu'] min-h-screen">
+    <div
+      class="fixed left-0 top-0 w-16 h-full bg-black bg-opacity-90 backdrop-blur-sm border-r border-red-500/30 z-50 flex flex-col"
+    >
+      <div class="p-4 border-b border-red-500/30">
+        <div
+          class="w-8 h-8 bg-gradient-to-r from-red-500 to-red-700 rounded-lg flex items-center justify-center"
+        >
+          <span class="text-white font-bold text-sm">R</span>
         </div>
-      </button>
-    </div>
+      </div>
 
-    <div class="relative group">
-      <button onclick="scrollToSection('second_section')" class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative" data-section="second_section">
-        <i class="fas fa-user text-lg"></i>
-        <div class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50">
-          About
-          <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"></div>
+      <nav class="flex-1 p-2 space-y-1">
+        <div class="relative group">
+          <button
+            onclick="scrollToSection('first_section')"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            data-section="first_section"
+          >
+            <i class="fas fa-home text-lg"></i>
+            <div
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+            >
+              Home
+              <div
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+              ></div>
+            </div>
+          </button>
         </div>
-      </button>
-    </div>
 
-    <div class="relative group">
-      <button onclick="scrollToSection('third_section')" class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative" data-section="third_section">
-        <i class="fas fa-chart-bar text-lg"></i>
-        <div class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50">
-          My Skills
-          <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"></div>
+        <div class="relative group">
+          <button
+            onclick="scrollToSection('second_section')"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            data-section="second_section"
+          >
+            <i class="fas fa-user text-lg"></i>
+            <div
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+            >
+              About
+              <div
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+              ></div>
+            </div>
+          </button>
         </div>
-      </button>
-    </div>
 
-    <div class="relative group">
-      <button onclick="scrollToSection('fourth_section')" class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative" data-section="fourth_section">
-        <i class="fas fa-cogs text-lg"></i>
-        <div class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50">
-          My Services
-          <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"></div>
+        <div class="relative group">
+          <button
+            onclick="scrollToSection('third_section')"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            data-section="third_section"
+          >
+            <i class="fas fa-chart-bar text-lg"></i>
+            <div
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+            >
+              My Skills
+              <div
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+              ></div>
+            </div>
+          </button>
         </div>
-      </button>
-    </div>
 
-    <div class="relative group">
-      <button onclick="scrollToSection('fifth_section')" class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative" data-section="fifth_section">
-        <i class="fas fa-envelope text-lg"></i>
-        <div class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50">
-          Contact
-          <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"></div>
+        <div class="relative group">
+          <button
+            onclick="scrollToSection('fourth_section')"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            data-section="fourth_section"
+          >
+            <i class="fas fa-cogs text-lg"></i>
+            <div
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+            >
+              My Builds
+              <div
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+              ></div>
+            </div>
+          </button>
         </div>
-      </button>
+
+        <div class="relative group">
+          <button
+            onclick="scrollToSection('fifth_section')"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            data-section="fifth_section"
+          >
+            <i class="fas fa-envelope text-lg"></i>
+            <div
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+            >
+              Contact
+              <div
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+              ></div>
+            </div>
+          </button>
+        </div>
+      </nav>
+
+      <div class="p-2 border-t border-red-500/30">
+        <div class="w-full bg-gray-700 rounded-full h-1">
+          <div
+            id="progress-bar"
+            class="progress-bar bg-red-500 h-1 rounded-full"
+            style="width: 20%"
+          ></div>
+        </div>
+        <p class="text-xs text-gray-400 text-center mt-1" id="progress-text">
+          1/5
+        </p>
+      </div>
     </div>
-  </nav>
+    <div id="particles-js" class="fixed h-full"></div>
 
- 
-  <div class="p-2 border-t border-red-500/30">
-    <div class="w-full bg-gray-700 rounded-full h-1">
-      <div id="progress-bar" class="progress-bar bg-red-500 h-1 rounded-full" style="width: 20%"></div>
-    </div>
-    <p class="text-xs text-gray-400 text-center mt-1" id="progress-text">1/5</p>
-  </div>
-</div>
-   <div id="particles-js" class="fixed  h-full "></div>
+    <section id="first-section" class="p-4 md:hidden">
+      <nav class="flex justify-between items-center mt-4 mb-4">
+        <h1
+          class="text-3xl text-red-500"
+          id="Logo"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          RAYFLIX
+        </h1>
 
- 
+        <div
+          class="md:hidden text-white text-2xl cursor-pointer"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars" id="hamburger-icon"></i>
+        </div>
+      </nav>
 
-<section id="first-section" class="p-4 md:hidden">
-  <nav class="flex justify-between items-center mt-4 mb-4  ">
-   
-    <h1 class="text-3xl text-red-500" id="Logo" data-aos="zoom-in" data-aos-duration="1500">
-      RAYFLIX
-    </h1>
-
-    
-    <div class="md:hidden text-white text-2xl cursor-pointer" id="menu-toggle">
-      <i class="fas fa-bars" id="hamburger-icon"></i>
-    </div>
-  </nav>
-
- 
-  <div id="mobile-menu" class="md:hidden flex-col space-y-4 px-4 text-red-500 items-center opacity-0 invisible transition-all duration-300 ease-in-out">
-    <a href="#first_section" class="block hover:text-white">Home</a>
-    <a href="#second_section" class="block hover:text-white">About Me</a>
-    <a href="#third_section" class="block hover:text-white">My Skills</a>
-    <a href="#fourth_section" class="block hover:text-white">My Services</a>
-    <a href="#fifth_section" class="block hover:text-white">Contact</a>
-  </div>
-</section>
-
-
-
-
+      <div
+        id="mobile-menu"
+        class="md:hidden flex-col space-y-4 px-4 text-red-500 items-center opacity-0 invisible transition-all duration-300 ease-in-out"
+      >
+        <a href="#first_section" class="block hover:text-white">Home</a>
+        <a href="#second_section" class="block hover:text-white">About Me</a>
+        <a href="#third_section" class="block hover:text-white">My Skills</a>
+        <a href="#fourth_section" class="block hover:text-white">My Builds</a>
+        <a href="#fifth_section" class="block hover:text-white">Contact</a>
+      </div>
+    </section>
 
     <section id="first_section" class="responsive-hero">
-      <div class="flex lg:justify-between mt-10 max-[480px]:flex-col md:flex-col lg:flex-row  items-center  ">
+      <div
+        class="flex lg:justify-between mt-10 max-[480px]:flex-col md:flex-col lg:flex-row items-center"
+      >
         <div class="">
-     
-          <img src="Web3_Rayflix3.png" alt="Rayflix" class=" bg-transparent opacity-92 lg:size-full object-cover lg:w-86 lg:h-130 mb-10 sm:mt-10 shadow-none hover:shadow-[0_10px_30px_rgba(255,0,0,0.5)] transition-transform hover:scale-90 duration-400 max-[480px]:flex-col  max-[480px]:size-2/3 max-[480px]:justify-center max-[480px]:mt-5 md:size-2/3 md:items-center lg:mb-50 " data-aos="flip-right" data-aos-duration="1500" />
+          <img
+            src="/Pictures/Web3_Rayflix.png"
+            alt="Rayflix"
+            class="bg-transparent opacity-92 lg:size-full object-cover lg:w-86 lg:h-130 mb-10 sm:mt-10 shadow-none hover:shadow-[0_10px_30px_rgba(255,0,0,0.5)] transition-transform hover:scale-90 duration-400 max-[480px]:flex-col max-[480px]:size-2/3 max-[480px]:justify-center max-[480px]:mt-5 md:size-2/3 md:items-center lg:mb-50"
+        
+          />
         </div>
-        <div class="lg:mt-40 flex flex-col justify-center  mr-30 ml-30">
+        <div class="lg:mt-40 flex flex-col justify-center mr-30 ml-30">
           <h1 class="text-2xl mb-2">
-            Hey, I'm <span class="text-red-500" id="ray" data-aos="fade-right" data-aos-duration="1500">Rayflix</span>
+            Hey, I'm
+            <span
+              class="text-red-500"
+              id="ray"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              >Rayflix</span
+            >
           </h1>
-       <h2 class="text-4xl mb-3 max-[480px]:text-3xl">
-    I'm a <span class="text-red-500" id="soft">SOFTWARE DEVELOPER</span>
-</h2>
-          <p class="text-sm italic "data-aos="flip-up" data-aos-duration="1500">
+          <h2 class="text-3xl mb-3 max-[480px]:text-3xl">
+            I'm a <span class="text-red-500" id="soft">SOFTWARE DEVELOPER</span>
+          </h2>
+          <p class="text-sm italic" data-aos="flip-up" data-aos-duration="1500">
             I am a web developer with a passion for creating dynamic and
             responsive websites. <br />
             I specialize in front-end development, using HTML, CSS, and
@@ -135,7 +201,11 @@
             My goal is to deliver high-quality web solutions that meet the needs
             of my clients.
           </p>
-          <div class="justify-around space-x-10  m-5 " data-aos="fade-up" data-aos-duration="1500">
+          <div
+            class="justify-around space-x-10 m-5"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <a
               href="https://www.linkedin.com/in/raymond-samuel-993971329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               aria-label="LinkedIn"
@@ -173,360 +243,522 @@
               ></i>
             </a>
           </div>
-            <a href="mailto:rayflix55@gmail.com?subject=Interested in Hiring&body=Hi Rayflix,%0D%0A%0D%0AI'm interested in discussing potential work opportunities with you.%0D%0A%0D%0ABest regards" 
-              class="border-solid border-2 border-red-500 w-80 h-10 mt-5 mb-50 rounded-md bg-black text-red-500 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110 inline-block text-center leading-10 no-underline" data-aos="zoom-in" data-aos-duration="1500">
-              Hire <span></span> Me
-            </a>
+          <a
+            href="mailto:rayflix55@gmail.com?subject=Interested in Hiring&body=Hi Rayflix,%0D%0A%0D%0AI'm interested in discussing potential work opportunities with you.%0D%0A%0D%0ABest regards"
+            class="border-solid border-2 border-red-500 w-80 h-10 mt-5 mb-50 rounded-md bg-black text-red-500 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110 inline-block text-center leading-10 no-underline"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            Hire <span></span> Me
+          </a>
         </div>
       </div>
-   
-</section>
-    
- <section id="second_section" class="responsive-about  flex justify-center items-center">
-      
+    </section>
 
-      <div class="about-card  flex  items-center bg-gradient-to-br from-gray-900/40 via-red-900/60 to-gray-950/40 backdrop-blur-sm border border-white/10 rounded-3xl shadow-2xl relative">
-        
-       
-        <div class="absolute inset-0 opacity-30" style="background-image: url('data:image/svg+xml,<svg width=&quot;200&quot; height=&quot;200&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><path d=&quot;M50,100 Q75,50 100,100 T150,100&quot; fill=&quot;none&quot; stroke=&quot;rgba(255,0,0,0.03)&quot; stroke-width=&quot;2&quot;/><path d=&quot;M30,80 Q50,40 70,80&quot; fill=&quot;none&quot; stroke=&quot;rgba(255,0,0,0.02)&quot; stroke-width=&quot;1.5&quot;/></svg>'); background-size: 300px 300px; background-repeat: repeat;"></div>
-        
-      
-        <div class="absolute top-20 left-10 w-64 h-64 bg-red-500 opacity-5 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-10 right-20 w-96 h-96 bg-red-500 opacity-3 rounded-full blur-3xl"></div>
-        
-    
-        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-16">
-          
-        
-          <div class="flex flex-col justify-center space-y-6" data-aos="fade-right" data-aos-duration="1500">
-            
-          
+    <section
+      id="second_section"
+      class="responsive-about flex justify-center items-center"
+    >
+      <div
+        class="about-card flex items-center bg-gradient-to-br from-gray-900/40 via-red-900/60 to-gray-950/40 backdrop-blur-sm border border-white/10 rounded-3xl shadow-2xl relative"
+      >
+        <div
+          class="absolute inset-0 opacity-30"
+          style="
+            background-image: url('data:image/svg+xml,<svg width=&quot;200&quot; height=&quot;200&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><path d=&quot;M50,100 Q75,50 100,100 T150,100&quot; fill=&quot;none&quot; stroke=&quot;rgba(255,0,0,0.03)&quot; stroke-width=&quot;2&quot;/><path d=&quot;M30,80 Q50,40 70,80&quot; fill=&quot;none&quot; stroke=&quot;rgba(255,0,0,0.02)&quot; stroke-width=&quot;1.5&quot;/></svg>');
+            background-size: 300px 300px;
+            background-repeat: repeat;
+          "
+        ></div>
+
+        <div
+          class="absolute top-20 left-10 w-64 h-64 bg-red-500 opacity-5 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-10 right-20 w-96 h-96 bg-red-500 opacity-3 rounded-full blur-3xl"
+        ></div>
+
+        <div
+          class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-16"
+        >
+          <div
+            class="flex flex-col justify-center space-y-6"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <div class="flex items-center space-x-2">
               <span class="text-gray-300 text-lg font-medium">Hi</span>
-              <svg class="w-6 h-6 text-red-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"/>
+              <svg
+                class="w-6 h-6 text-red-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"
+                />
               </svg>
               <span class="text-gray-300 text-lg font-medium">I'm Rayflix</span>
             </div>
-            
-  
-            <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight" id="passion">
-              Coding Is My<br>
-              Passion & I Build<br>
+
+            <h1
+              class="text-4xl lg:text-5xl font-bold text-white leading-tight"
+              id="passion"
+            >
+              Coding Is My<br />
+              Passion & I Build<br />
               Digital Solutions
             </h1>
-            
-         
+
             <p class="text-gray-400 text-base lg:text-md leading-relaxed">
-              I am a passionate software developer with a strong focus on web development. <br> My journey in coding began at a young age, and it has been a fulfilling adventure ever since. <br> I love creating innovative solutions that make a difference in people's lives.
+              I am a passionate software developer with a strong focus on web
+              development. <br />
+              My journey in coding began at a young age, and it has been a
+              fulfilling adventure ever since. <br />
+              I love creating innovative solutions that make a difference in
+              people's lives.
             </p>
-            
-          
+
             <div class="pt-4">
               <a href="Rayflix_CV.docx" target="_blank" class="inline-block">
-                <button class="group bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <button
+                  class="group bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                >
                   <span class="text-lg">Download CV</span>
-                  <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
+                  <svg
+                    class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
+                    />
                   </svg>
                 </button>
               </a>
             </div>
-            
           </div>
-          
-   
-          <div class="flex items-center justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1500">
+
+          <div
+            class="flex items-center justify-center lg:justify-end"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <div class="relative">
-           
-              <div class="relative w-80 h-96 lg:w-96 lg:h-[500px] rounded-3xl  bg-gradient-to-b from-gray-200 to-gray-300 shadow-2xl">
-                <img 
-                  src="about-me-removebg-preview.png" 
-                  alt="Rayflix - Software Developer" 
+              <div
+                class="relative w-80 h-96 lg:w-96 lg:h-[500px] rounded-3xl bg-gradient-to-b from-gray-200 to-gray-300 shadow-2xl"
+              >
+                <img
+                  src="/Pictures/About-me.png"
+                  alt="Rayflix - Software Developer"
                   class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              
-              <div class="absolute -bottom-6 -right-6 w-full h-full bg-gradient-to-br from-red-500/20 to-pink-500/20 rounded-3xl blur-2xl -z-10"></div>
+
+              <div
+                class="absolute -bottom-6 -right-6 w-full h-full bg-gradient-to-br from-red-500/20 to-pink-500/20 rounded-3xl blur-2xl -z-10"
+              ></div>
             </div>
           </div>
-          
         </div>
       </div>
-      
     </section>
 
-  
-    <section id="third_section" class="responsive-skills">
-      <div class="skills-card  diagonal-stripes  rounded-3xl shadow-2xl relative bg-gradient-to-br from-gray-900/40 via-red-900/60 to-gray-950/40 backdrop-blur-sm border border-white/10">
-        
-        <!-- Content Wrapper -->
-        <div class="relative ">
-            
-            <!-- Header Section -->
-            <div class="text-center mb-16">
-                <h1 class="text-6xl md:text-7xl font-bold text-yellow-400 mb-6" id="skills">My Skills</h1>
-             
+    <section id="third_section" class="responsive-skills"  data-aos="flip-down"
+              data-aos-duration="1500">
+      <div
+        class="skills-card diagonal-stripes rounded-3xl shadow-2xl relative bg-gradient-to-br from-gray-900/40 via-red-900/60 to-gray-950/40 backdrop-blur-sm border border-white/10"
+      >
+        <div class="relative">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center md:justify-start">
+              <div class="relative bottom-10">
+                <h2
+                  class="vertical-text text-8xl md:text-9xl font-bold text-yellow-400 tracking-wider"
+                  id="skills"
+                >
+                  My <span>Skills</span>
+                </h2>
+              </div>
             </div>
-            
-            <!-- Skills Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                
-                <!-- Left Side - Vertical "Skills" Text -->
-                <div class="flex justify-center md:justify-start">
-                    <div class="relative bottom-10">
-                        <h2 class="vertical-text text-8xl md:text-9xl font-bold text-yellow-400 tracking-wider ">
-                            <img src="Skills-Pic.png" alt="my skills" class="w-100 h-100  object-top rounded-full mb-4 hover:scale-105 transition-transform duration-500">
-                        
-                        </h2>
-                      
-                    </div>
+
+            <div class="space-y-12">
+              <div class="grid grid-cols-5 gap-8">
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <i class="fab fa-html5 text-7xl" style="color: #e34f26"></i>
+                  </div>
+                  <span class="text-white font-semibold text-sm">HTML</span>
                 </div>
-                
-                <!-- Right Side - Technology Icons Grid -->
-                <div class="space-y-12">
-                    
-                    <!-- Row 1 -->
-                    <div class="grid grid-cols-5 gap-8">
-                        <!-- HTML -->
-                        <div class="icon flex flex-col items-center space-y-3 ">
-                            <div class="w-20 h-20 flex items-center justify-center ">
-                                <i class="fab fa-html5 text-7xl" style="color: #E34F26;"></i>
-                            </div>
-                            <span class="text-white font-semibold text-sm">HTML</span>
-                        </div>
-                        
-                        <!-- CSS -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center">
-                                <i class="fab fa-css3-alt text-7xl" style="color: #1572B6;"></i>
-                            </div>
-                            <span class="text-white font-semibold text-sm">CSS</span>
-                        </div>
-                        
-                        <!-- SASS -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center">
-                                <i class="fab fa-sass text-7xl" style="color: #CC6699;"></i>
-                            </div>
-                            <span class="text-white font-semibold text-sm">SASS</span>
-                        </div>
-                        
-                        <!-- JavaScript -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center">
-                                <i class="fab fa-js text-7xl bg-yellow-400 text-black rounded-lg p-2"></i>
-                            </div>
-                            <span class="text-white font-semibold text-sm">JAVASCRIPT</span>
-                        </div>
-                        
-                        <!-- React JS -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center">
-                                <i class="fab fa-react text-7xl" style="color: #61DAFB;"></i>
-                            </div>
-                            <span class="text-white font-semibold text-sm">REACT JS</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Vertical Separator Line -->
-                    <!-- <div class="flex justify-center">
-                        <div class="w-1 h-24 bg-yellow-400"></div>
-                    </div> -->
-                    
-                    <!-- Row 2 -->
-                    <div class="grid grid-cols-5 gap-8">
-                        <!-- GitHub -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center bg-white rounded-full">
-                                <i class="fab fa-github text-6xl text-black"></i>
-                            </div>
-                            <span class="text-white font-semibold text-sm">GITHUB</span>
-                        </div>
-                        
-                        <!-- Node JS -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center">
-                                <i class="fab fa-node-js text-7xl" style="color: #339933;"></i>
-                            </div>
-                            <span class="text-white font-semibold text-sm">NODE JS</span>
-                        </div>
-                        
-                        <!-- Firebase -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center">
-                                <svg class="w-16 h-16" viewBox="0 0 256 351" fill="none">
-                                    <path d="M1.253 280.732l1.605-3.131 99.353-188.518-44.15-83.475C54.392-1.283 45.074.474 43.87 8.188L1.253 280.732z" fill="#FFA000"/>
-                                    <path d="M134.417 148.974l32.039-32.812-32.039-61.007c-3.042-5.791-10.433-6.398-13.443-.59l-17.705 34.109-.53 1.744 31.678 58.556z" fill="#F57C00"/>
-                                    <path d="M134.417 148.974l-33.632-62.093-99.871 188.518 132.084 74.591c5.711 3.525 12.591 3.525 18.302 0l1.117-.629-18-200.387z" fill="#FFCA28"/>
-                                    <path d="M134.417 148.974l101.8 193.617 32.159-201.938c1.283-8.217-7.356-15.124-14.711-11.771l-119.248 20.092z" fill="#FFA000"/>
-                                </svg>
-                            </div>
-                            <span class="text-white font-semibold text-sm">FIREBASE</span>
-                        </div>
-                        
-                        <!-- MongoDB -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center">
-                                <svg class="w-16 h-16" viewBox="0 0 256 549" fill="none">
-                                    <path d="M175.622 61.108C152.612 33.807 132.797 6.078 128.749.32a1.03 1.03 0 0 0-1.492 0c-4.048 5.759-23.863 33.487-46.874 60.788-197.507 251.896 31.108 421.89 31.108 421.89l1.917 1.28c1.704 26.234 5.966 63.988 5.966 63.988h17.045s4.26-37.54 5.965-63.987l1.918-1.494c.213.214 228.828-169.78 31.32-421.677zm-47.726 418.05s-10.227-8.744-12.997-13.222v-.428l12.358-274.292c0-.853 1.491-.853 1.491 0l12.358 274.292v.428c-2.77 4.478-12.997 13.223-12.997 13.223h-.213z" fill="#10AA50"/>
-                                </svg>
-                            </div>
-                            <span class="text-white font-semibold text-sm">MONGODB</span>
-                        </div>
-                        
-                        <!-- Docker -->
-                        <div class="icon flex flex-col items-center space-y-3">
-                            <div class="w-20 h-20 flex items-center justify-center">
-                                <i class="fab fa-docker text-7xl" style="color: #2496ED;"></i>
-                            </div>
-                            <span class="text-white font-semibold text-sm">DOCKERS</span>
-                        </div>
-                    </div>
-                    
+
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <i
+                      class="fab fa-css3-alt text-7xl"
+                      style="color: #1572b6"
+                    ></i>
+                  </div>
+                  <span class="text-white font-semibold text-sm">CSS</span>
                 </div>
-                
+
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <svg
+                      class="w-16 h-16"
+                      viewBox="0 0 54 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#38BDF8"
+                        d="M27 0C19.8 0 15.3 3.6 13.5 10.8C16.2 7.2 19.35 5.85 23.4 6.75C25.71 7.26 27.33 8.82 29.13 10.56C32.07 13.41 35.46 16.5 42 16.5C49.2 16.5 53.7 12.9 55.5 5.7C52.8 9.3 49.65 10.65 45.6 9.75C43.29 9.24 41.67 7.68 39.87 5.94C36.93 3.09 33.54 0 27 0ZM13.5 16.5C6.3 16.5 1.8 20.1 0 27.3C2.7 23.7 5.85 22.35 9.9 23.25C12.21 23.76 13.83 25.32 15.63 27.06C18.57 29.91 21.96 33 28.5 33C35.7 33 40.2 29.4 42 22.2C39.3 25.8 36.15 27.15 32.1 26.25C29.79 25.74 28.17 24.18 26.37 22.44C23.43 19.59 20.04 16.5 13.5 16.5Z"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-white font-semibold text-sm"
+                    >Tailwind CSS</span
+                  >
+                </div>
+
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <i
+                      class="fab fa-js text-7xl bg-yellow-400 text-black rounded-lg p-2"
+                    ></i>
+                  </div>
+                  <span class="text-white font-semibold text-sm"
+                    >JAVASCRIPT</span
+                  >
+                </div>
+
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <i class="fab fa-react text-7xl" style="color: #61dafb"></i>
+                  </div>
+                  <span class="text-white font-semibold text-sm">REACT JS</span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-5 gap-8">
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div
+                    class="w-20 h-20 flex items-center justify-center bg-white rounded-full"
+                  >
+                    <i class="fab fa-github text-6xl text-black"></i>
+                  </div>
+                  <span class="text-white font-semibold text-sm">GITHUB</span>
+                </div>
+
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <i
+                      class="fab fa-node-js text-7xl"
+                      style="color: #339933"
+                    ></i>
+                  </div>
+                  <span class="text-white font-semibold text-sm">NODE JS</span>
+                </div>
+
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <svg class="w-16 h-16" viewBox="0 0 256 351" fill="none">
+                      <path
+                        d="M1.253 280.732l1.605-3.131 99.353-188.518-44.15-83.475C54.392-1.283 45.074.474 43.87 8.188L1.253 280.732z"
+                        fill="#FFA000"
+                      />
+                      <path
+                        d="M134.417 148.974l32.039-32.812-32.039-61.007c-3.042-5.791-10.433-6.398-13.443-.59l-17.705 34.109-.53 1.744 31.678 58.556z"
+                        fill="#F57C00"
+                      />
+                      <path
+                        d="M134.417 148.974l-33.632-62.093-99.871 188.518 132.084 74.591c5.711 3.525 12.591 3.525 18.302 0l1.117-.629-18-200.387z"
+                        fill="#FFCA28"
+                      />
+                      <path
+                        d="M134.417 148.974l101.8 193.617 32.159-201.938c1.283-8.217-7.356-15.124-14.711-11.771l-119.248 20.092z"
+                        fill="#FFA000"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-white font-semibold text-sm">FIREBASE</span>
+                </div>
+
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <svg class="w-16 h-16" viewBox="0 0 256 549" fill="none">
+                      <path
+                        d="M175.622 61.108C152.612 33.807 132.797 6.078 128.749.32a1.03 1.03 0 0 0-1.492 0c-4.048 5.759-23.863 33.487-46.874 60.788-197.507 251.896 31.108 421.89 31.108 421.89l1.917 1.28c1.704 26.234 5.966 63.988 5.966 63.988h17.045s4.26-37.54 5.965-63.987l1.918-1.494c.213.214 228.828-169.78 31.32-421.677zm-47.726 418.05s-10.227-8.744-12.997-13.222v-.428l12.358-274.292c0-.853 1.491-.853 1.491 0l12.358 274.292v.428c-2.77 4.478-12.997 13.223-12.997 13.223h-.213z"
+                        fill="#10AA50"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-white font-semibold text-sm">MONGODB</span>
+                </div>
+
+                <div class="icon flex flex-col items-center space-y-3">
+                  <div class="w-20 h-20 flex items-center justify-center">
+                    <i
+                      class="fab fa-docker text-7xl"
+                      style="color: #2496ed"
+                    ></i>
+                  </div>
+                  <span class="text-white font-semibold text-sm">DOCKERS</span>
+                </div>
+              </div>
             </div>
-            
+          </div>
         </div>
-        
-    </div>
+      </div>
     </section>
 
-   
-  
-    <section id="fourth_sectio" class="">
-      
-    </section>
-    
+    <section class="projects" id="fourth_section">
+      <h2 class="section-title">My Builds</h2>
 
-   
+      <div class="projects-grid">
+        <div class="card"  data-aos="zoom-in"
+              data-aos-duration="800">
+          <div class="project-image">
+            <img
+              src="/Pictures/client-portfolio.png"
+              alt="Developer Portfolio"
+            />
+          </div>
+
+          <div class="card-content">
+            <h3>Client Portfolio Website</h3>
+            <p>
+              Personal portfolio website with glassmorphism UI, backdrop blur
+              effects, smooth scroll navigation, responsive design, and
+              interactive mobile menu animations
+            </p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="live-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="github-link" target="_blank">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in"
+              data-aos-duration="1200">
+          <div class="project-image">
+            <img src="/Pictures/weather-app.png" alt="Weather App" />
+          </div>
+
+          <div class="card-content">
+            <h3>Weather App</h3>
+            <p>
+              Real-time weather app with API integration and responsive layout.
+            </p>
+
+            <div class="tags">
+              <span>API</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="live-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="github-link" target="_blank">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in"
+              data-aos-duration="1400">
+          <div class="project-image">
+            <img src="/Pictures/profile-card.png" alt="Profile Card" />
+          </div>
+
+          <div class="card-content">
+            <h3>Profile Card</h3>
+            <p>
+              A responsive, semantic HTML profile card component that displays
+              my information including bio, social links, hobbies, and dislikes.
+            </p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="live-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="github-link" target="_blank">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in"
+              data-aos-duration="1600">
+          <div class="project-image">
+            <img src="/Pictures/ngo-web.png" alt="Deaf NGO Website" />
+          </div>
+
+          <div class="card-content">
+            <h3>Deaf NGO Website</h3>
+            <p>
+              A high-performance, accessible web platform built for the Yagazie
+              Weng Umezurike Foundation for the Deaf.
+            </p>
+
+            <div class="tags">
+              <span>UI/UX</span>
+              <span>Frontend</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="live-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="github-link" target="_blank">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="fifth_section" class=" ">
-
       <div class="container">
         <div class="contact-wrapper">
-            
-            <!-- Left Panel - Call to Action -->
-            <div class="left-panel">
-
-              <div class="contact-icons">
-
+          <div class="left-panel">
+            <div class="contact-icons">
               <a
-              href="https://github.com/Rayflix55"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="test-user-social-github"
-              class="git"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://twitter.com/web3rayflix"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="test-user-social-twitter"
-              class="x"
-            >
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a
-              href="https://discord.gg/qgqfbnPE"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="test-user-social-discord"
-              class="dis"
-            >
-              <i class="fa-brands fa-discord"></i>
-            </a>
-            <a
-              href="https://linkedin.com/in/akpe-samuel-993971329"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="test-user-social-linkedin"
-              class="lin"
-            >
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-             <a
-              href="https://t.me/rayflix55"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="test-user-social-telegram"
-              class="tel"
-            >
-              <i class="fa-brands fa-telegram"></i>
-            </a>
+                href="https://github.com/Rayflix55"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                class="git"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://twitter.com/web3rayflix"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                class="x"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://discord.gg/qgqfbnPE"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-discord"
+                class="dis"
+              >
+                <i class="fa-brands fa-discord"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/akpe-samuel-993971329"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                class="lin"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://t.me/rayflix55"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-telegram"
+                class="tel"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </div>
 
+            <h1>Get In touch with Rayflix!</h1>
+
+            <p>
+              Have questions or ideas? I'd love to hear from you. <br />
+              Reach out anytime and let's connect.
+            </p>
+          </div>
+
+          <div class="right-panel">
+            <h2>Contact Me</h2>
+
+            <form
+              action="https://formsubmit.co/rayflix55@gmail.com"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_next"
+                value="https://rayflixthetechbro.vercel.app/thanks.html"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Contact!"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you for contacting me! I'll get back to you soon."
+              />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
               </div>
-                
-                <h1>Get In touch with Rayflix!</h1>
-                
-                <p>Have questions or ideas? I'd love to hear from you. <br> Reach out anytime and let's connect.</p>
-                
-                
-            </div>
-            
-            <!-- Right Panel - Contact Form -->
-            <div class="right-panel">
-                <h2>Contact Me</h2>
-                
-                   <form action="https://formsubmit.co/rayflix55@gmail.com" method="POST">
-                    <!-- FormSubmit Configuration -->
-                    <input type="hidden" name="_next" value="https://rayflixthetechbro.vercel.app/thanks.html">
-                    <input type="hidden" name="_subject" value="New Portfolio Contact!">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I'll get back to you soon.">
-                    
-                    <!-- First Row: First Name & Last Name -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                    </div>
-                    
-                    <!-- Second Row: Postal Code & Email -->
-                    <div class="form-row">
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    
-                    <!-- Message Field -->
-                    <div class="form-group">
-                        <label for="description">Job Description</label>
-                        <textarea id="description" name="message" required></textarea>
-                    </div>
-                    
-                    <!-- Submit Button -->
-                    <button type="submit" class="submit-button">Submit</button>
-                </form>
-            </div>
-            
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="description">Job Description</label>
+                <textarea id="description" name="message" required></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">Submit</button>
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
 
-    
-    
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ offset: 0 });
-    </script>
-
-
-
-
   </body>
 </html>

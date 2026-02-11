@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  const navLinks = document.querySelectorAll("a[href^='#']");
+  const navLinks = document.querySelectorAll("a[href^='']");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -62,9 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
           behavior: "smooth",
         });
 
-        // Close mobile menu after clicking a link
         if (mobileMenu && mobileMenu.classList.contains("opacity-100")) {
-          
           if (navbar) {
             navbar.classList.remove("menu-open");
           }
@@ -85,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Custom animations per section
   const animationConfigs = [
     {
       selector: "#first-section",
@@ -154,7 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Highlight active nav link on scroll
   const sectionIds = Array.from(navLinks)
     .map((link) => link.getAttribute("href"))
     .filter((id) => id);
@@ -186,7 +182,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Initialize AOS if available
   if (typeof AOS !== "undefined") {
     AOS.init({
       once: false,
@@ -198,7 +193,6 @@ document.addEventListener("DOMContentLoaded", function () {
     AOS.refreshHard();
   }
 
-  // Initialize Particles.js if available
   if (typeof particlesJS !== "undefined") {
     particlesJS("particles-js", {
       particles: {
@@ -267,7 +261,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Sidebar functionality
   const sidebarSections = [
     "first_section",
     "second_section",
@@ -330,11 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Typewriter Effect for Role Titles
   function initTypewriterEffect() {
-    const roles = [
-      "SOFTWARE DEVELOPER",
-      "SOFTWARE ENGINEER",
-      "TECHNICAL WRITER",
-    ];
+    const roles = ["SOFTWARE DEVELOPER", "TECHNICAL WRITER"];
 
     const typewriterElement = document.getElementById("soft");
 
