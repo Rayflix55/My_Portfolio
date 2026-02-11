@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills & Experience - Tech Stack</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: #000;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      .skills-container {
+        max-width: 1200px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Header */
+      .skills-header {
+        margin-bottom: 80px;
+      }
+
+      .skills-subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        color: #00ff88;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+
+      .skills-title {
+        font-size: 56px;
+        font-weight: 700;
+        color: white;
+        line-height: 1.2;
+      }
+
+      /* Tech Grid */
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 60px 80px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .tech-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .tech-item:hover {
+        transform: translateY(-10px);
+      }
+
+      .tech-icon {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 64px;
+        transition: transform 0.3s ease;
+      }
+
+      .tech-item:hover .tech-icon {
+        transform: scale(1.1);
+      }
+
+      .tech-name {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+      }
+
+      /* Custom SVG Icons */
+      .tech-icon svg {
+        width: 64px;
+        height: 64px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .tech-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 50px 60px;
+        }
+
+        .skills-title {
+          font-size: 42px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .tech-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 40px 50px;
+        }
+
+        .skills-title {
+          font-size: 36px;
+        }
+
+        .tech-icon {
+          width: 60px;
+          height: 60px;
+          font-size: 48px;
+        }
+
+        .tech-icon svg {
+          width: 48px;
+          height: 48px;
+        }
+
+        .tech-name {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .tech-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px 40px;
+        }
+
+        .skills-title {
+          font-size: 28px;
+        }
+
+        .skills-subtitle {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="skills-container">
+      <!-- Header -->
+      <div class="skills-header">
+        <div class="skills-subtitle">SKILLS & EXPERIENCE</div>
+        <h1 class="skills-title">
+          Working with Latest<br />Technologies & Stack
+        </h1>
+      </div>
+
+      <!-- Tech Stack Grid -->
+      <div class="tech-grid">
+        <!-- HTML5 -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-html5" style="color: #e34f26"></i>
+          </div>
+          <div class="tech-name">HTML5</div>
+        </div>
+        <!-- CSS3-->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-css3-alt" style="color: #1572b6"></i>
+          </div>
+          <div class="tech-name">CSS3</div>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 64 64">
+              <path
+                d="M32 16 C24 16 20 20 20 28 C24 24 28 23 32 24 C34 24.5 35.5 26 37 27.5 C39.5 30 42.5 32 48 32 C56 32 60 28 60 20 C56 24 52 25 48 24 C46 23.5 44.5 22 43 20.5 C40.5 18 37.5 16 32 16 Z M20 32 C12 32 8 36 8 44 C12 40 16 39 20 40 C22 40.5 23.5 42 25 43.5 C27.5 46 30.5 48 36 48 C44 48 48 44 48 36 C44 40 40 41 36 40 C34 39.5 32.5 38 31 36.5 C28.5 34 25.5 32 20 32 Z"
+                fill="#06B6D4"
+              />
+            </svg>
+          </div>
+          <div class="tech-name">Tailwind CSS</div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i
+              class="fab fa-js"
+              style="
+                color: #f7df1e;
+                background: #000;
+                padding: 8px;
+                border-radius: 8px;
+              "
+            ></i>
+          </div>
+          <div class="tech-name">Javascript</div>
+        </div>
+        <!-- React -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-react" style="color: #61dafb"></i>
+          </div>
+          <div class="tech-name">React</div>
+        </div>
+
+        <!-- Python -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-python" style="color: #3776ab"></i>
+          </div>
+          <div class="tech-name">Python</div>
+        </div>
+
+        <!-- Node JS -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-node-js" style="color: #339933"></i>
+          </div>
+          <div class="tech-name">Node JS</div>
+        </div>
+
+        <!-- Next JS -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 64 64">
+              <circle
+                cx="32"
+                cy="32"
+                r="22"
+                fill="#000"
+                stroke="#fff"
+                stroke-width="2"
+              />
+              <text
+                x="50%"
+                y="68%"
+                font-size="20"
+                font-weight="bold"
+                fill="#fff"
+                text-anchor="middle"
+                font-family="Arial"
+              >
+                N
+              </text>
+            </svg>
+          </div>
+          <div class="tech-name">Next JS</div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-github" style="color: white"></i>
+          </div>
+          <div class="tech-name">GitHub</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

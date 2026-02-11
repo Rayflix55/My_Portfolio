@@ -19,13 +19,16 @@ body {
 
 .sidebar-icon {
   transition: all 0.3s ease;
+   color: #b0fc51;
+  background: #181818;
 }
 .sidebar-icon:hover {
   transform: scale(1.1);
+  
 }
 .sidebar-icon.active {
-  background: #dc2626;
-  color: white;
+  background: #b0fc51;
+  color: #181818;
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
 }
@@ -43,18 +46,34 @@ body {
 }
 
 
-#Logo {
+.Logo {
   font-family: "Bitcount Grid Single", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 2.5rem;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  text-transform: uppercase;
-  color: #ff0000;
-  text-align: left;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+ color: #b0fc51;
 }
+
+.logo-container{
+  background: #181818;
+}
+.first-pic:hover{
+            box-shadow: 0 10px 42px #b0fc51;
+
+}
+.head-icon{
+ color: #b0fc51;
+
+}
+.hire-me{
+     background: #b0fc51;
+  color: #181818;
+}
+.hire-me:hover{
+     color: #b0fc51;
+  background: rgb(41, 39, 39);
+}
+
 #ray {
   font-family: "Bitcount Grid Single", system-ui;
   font-optical-sizing: auto;
@@ -64,7 +83,7 @@ body {
   line-height: 1;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  color: #ff0000;
+  color: #b0fc51;
 }
 #soft {
   font-family: "Bitcount Grid Single", system-ui;
@@ -75,7 +94,7 @@ body {
   line-height: 1;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  color: #ff0000;
+  color: #b0fc51;
 }
 #passion {
   font-family: "Bitcount Grid Single", system-ui;
@@ -86,7 +105,7 @@ body {
   line-height: 1;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  color: #ff0000;
+  color: #b0fc51;
 }
 
 .topicc {
@@ -98,7 +117,7 @@ body {
   line-height: 1;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  color: #ff0000;
+  color: #b0fc51;
 }
 #ten {
   font-size: 3.5rem;
@@ -117,6 +136,15 @@ body {
   margin-right: auto;
   overflow: hidden;
   height: 600px;
+ background: linear-gradient( rgba(17, 24, 39, 0.4), 
+  rgba(176, 252, 81, 0.2),  
+  rgba(3, 7, 18, 0.4)
+);
+
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            
 }
 #about {
   font-family: "Playwrite AU NSW", system-ui;
@@ -126,47 +154,169 @@ body {
   font-size: 1.5rem;
   line-height: 1;
   letter-spacing: -0.05em;
+  
+}
+.about-image:hover{
+            box-shadow: 0 10px 42px #b0fc51;
+ 
+}
+.cv{
+   color: #b0fc51;
+  background: rgb(41, 39, 39);
+}
+.cv:hover{
+   background: #b0fc51;
+  color: #181818;
 }
 
 /* MY SKILLS */
-.skills-card {
-  width: 98%;
-  height: 100%;
-  padding: 3rem;
-  margin-bottom: 3rem;
-  margin-right: auto;
-  margin-top: 9rem;
-}
-.icon {
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border-radius: 50%;
-}
+  .skills-container {
+            width: 98%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 4rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            margin-top: 9rem;
+            margin-bottom: 9rem;
+             background: linear-gradient( rgba(17, 24, 39, 0.4), 
+  rgba(176, 252, 81, 0.2),  
+  rgba(3, 7, 18, 0.4));
+              box-shadow: 0 10px 42px #b0fc51;
 
-.icon:hover {
-  transform: scale(1.2) rotate(5deg);
-  filter: drop-shadow(0 5px 15px rgba(220, 38, 38, 0.4));
-}
+        }
 
-.icon:active {
-  transform: scale(0.95);
-}
-#skills {
-  font-family: nulshock, sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 5rem;
-  line-height: 1.6;
-  letter-spacing: 0.1em;
-  color: #ff0000;
-  display: flex;
-  flex-direction: column;
-}
-.vertical-text {
-  transform: rotate(-30deg);
-  white-space: nowrap;
-}
+      /* Header */
+      .skills-header {
+        margin-bottom: 80px;
+      }
+
+      .skills-subtitle {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: #00ff88;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+  font-family: "Bitcount Grid Single", system-ui;
+
+      }
+
+      .skills-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #b0fc51;
+        font-style: italic;
+        line-height: 1.2;
+        word-spacing: 0.3rem;
+          font-family: "Playwrite AU NSW", system-ui;
+      }
+
+      /* Tech Grid */
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 60px 80px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .tech-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .tech-item:hover {
+        transform: translateY(-10px);
+      }
+
+      .tech-icon {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 64px;
+        transition: transform 0.3s ease;
+      }
+
+      .tech-item:hover .tech-icon {
+        transform: scale(1.1);
+      }
+
+      .tech-name {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: whitesmoke;
+          font-family: "Playwrite AU NSW", system-ui;
+      }
+
+      /* Custom SVG Icons */
+      .tech-icon svg {
+        width: 64px;
+        height: 64px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .tech-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 50px 60px;
+        }
+
+        .skills-title {
+          font-size: 42px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .tech-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 40px 50px;
+        }
+
+        .skills-title {
+          font-size: 36px;
+        }
+
+        .tech-icon {
+          width: 60px;
+          height: 60px;
+          font-size: 48px;
+        }
+
+        .tech-icon svg {
+          width: 48px;
+          height: 48px;
+        }
+
+        .tech-name {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .tech-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px 40px;
+        }
+
+        .skills-title {
+          font-size: 28px;
+        }
+
+        .skills-subtitle {
+          font-size: 14px;
+        }
+      }
+
 
 /* MY BUILDS */
 
@@ -179,7 +329,7 @@ body {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 10px;
-  color: #ef4444;
+  color: #b0fc51;
   font-weight: 400;
   font-family: "Bitcount Grid Single", system-ui;
 }
@@ -190,11 +340,14 @@ body {
   gap: 80px;
 }
 
-.card {
-  background: linear-gradient(145deg, #1a1a1a, #111111);
+.card { 
+  background: linear-gradient( rgba(17, 24, 39, 0.4), 
+  rgba(176, 252, 81, 0.2),  
+  rgba(3, 7, 18, 0.4)
+);
+            border: 3px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(239, 68, 68, 0.1);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -206,8 +359,9 @@ body {
 
 .card:hover {
   transform: translateY(-10px);
-  border-color: rgba(239, 68, 68, 0.3);
-  box-shadow: 0 20px 40px rgba(239, 68, 68, 0.1);
+            box-shadow: 0 5px 30px #b0fc51;
+ 
+  
 }
 
 .project-image {
@@ -295,23 +449,25 @@ body {
 }
 
 .live-link {
-  background-color: #ef4444;
-  color: white;
+  background-color: #b0fc51;
+  color: black;
 }
 
 .live-link:hover {
-  background-color: #dc2626;
+  background-color: #374151;
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
-}
-
-.github-link {
-  background-color: transparent;
-  color: #9ca3af;
-  border: 1px solid #374151;
+  box-shadow: 0 5px 15px rgba(68, 239, 108, 0.3);
 }
 
 .github-link:hover {
+  background-color: transparent;
+   background-color: #fff;
+  color: #181818;
+  border: 1px solid #374151;
+}
+
+.github-link {
   background-color: #374151;
   color: white;
   transform: translateY(-2px);
@@ -350,7 +506,7 @@ body {
 .left-panel h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: rgb(158, 10, 10);
+  color: #b0fc51;
   line-height: 1.2;
 }
 
@@ -372,7 +528,7 @@ body {
   background: linear-gradient(
     135deg,
     rgba(17, 24, 39, 0.4) 0%,
-    rgba(127, 29, 29, 0.6) 50%,
+     rgba(176, 252, 81, 0.3),
     rgba(3, 7, 18, 0.4) 100%
   );
   padding: 1.5rem;
@@ -381,7 +537,7 @@ body {
 .right-panel h2 {
   font-size: 32px;
   font-weight: 700;
-  color: rgb(158, 10, 10);
+  color: #b0fc51;
   margin-bottom: 10px;
   font-family: "Playwrite AU NSW", system-ui;
 }
@@ -430,8 +586,8 @@ body {
 }
 
 .submit-button {
-  background: rgba(246, 10, 10, 0.6);
-  color: white;
+  background: #b0fc51;
+  color: #181818;
   border: none;
   padding: 16px 48px;
   border-radius: 12px;
@@ -444,9 +600,9 @@ body {
 }
 
 .submit-button:hover {
-  background: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
-  color: red;
+      color: #b0fc51;
+  background: rgb(41, 39, 39);
 }
 
 .contact-icons {

@@ -19,13 +19,13 @@
   </head>
   <body class="bg-black text-white font-['Ubuntu'] min-h-screen">
     <div
-      class="fixed left-0 top-0 w-16 h-full bg-black bg-opacity-90 backdrop-blur-sm border-r border-red-500/30 z-50 flex flex-col"
+      class="fixed left-0 top-0 w-16 h-full bg-black bg-opacity-90 backdrop-blur-sm border-r border-green-500/30 z-50 flex flex-col"
     >
-      <div class="p-4 border-b border-red-500/30">
+      <div class="p-4 border-b ">
         <div
-          class="w-8 h-8 bg-gradient-to-r from-red-500 to-red-700 rounded-lg flex items-center justify-center"
+          class="logo-container w-10 h-10  rounded-xl flex items-center justify-center"
         >
-          <span class="text-white font-bold text-sm">R</span>
+          <span class="Logo font-bold text-sm">R</span>
         </div>
       </div>
 
@@ -121,11 +121,11 @@
         </div>
       </nav>
 
-      <div class="p-2 border-t border-red-500/30">
+      <div class="p-2 border-t border-green-500/30">
         <div class="w-full bg-gray-700 rounded-full h-1">
           <div
             id="progress-bar"
-            class="progress-bar bg-red-500 h-1 rounded-full"
+            class="progress-bar bg-green-500 h-1 rounded-full"
             style="width: 20%"
           ></div>
         </div>
@@ -167,15 +167,16 @@
       </div>
     </section>
 
-    <section id="first_section" class="responsive-hero">
+    <section id="first_section" class="responsive-hero" >
       <div
         class="flex lg:justify-between mt-10 max-[480px]:flex-col md:flex-col lg:flex-row items-center"
       >
-        <div class="">
+        <div class=""  data-aos="fade-down"
+              data-aos-duration="2000">
           <img
             src="/Pictures/Web3_Rayflix.png"
             alt="Rayflix"
-            class="bg-transparent opacity-92 lg:size-full object-cover lg:w-86 lg:h-130 mb-10 sm:mt-10 shadow-none hover:shadow-[0_10px_30px_rgba(255,0,0,0.5)] transition-transform hover:scale-90 duration-400 max-[480px]:flex-col max-[480px]:size-2/3 max-[480px]:justify-center max-[480px]:mt-5 md:size-2/3 md:items-center lg:mb-50"
+            class="first-pic bg-transparent opacity-92 lg:size-full object-cover lg:w-86 lg:h-130 mb-10 sm:mt-10 shadow-none  transition-transform hover:scale-90 duration-400 max-[480px]:flex-col max-[480px]:size-2/3 max-[480px]:justify-center max-[480px]:mt-5 md:size-2/3 md:items-center lg:mb-50"
         
           />
         </div>
@@ -183,7 +184,7 @@
           <h1 class="text-2xl mb-2">
             Hey, I'm
             <span
-              class="text-red-500"
+              class=""
               id="ray"
               data-aos="fade-right"
               data-aos-duration="1500"
@@ -191,7 +192,7 @@
             >
           </h1>
           <h2 class="text-3xl mb-3 max-[480px]:text-3xl">
-            I'm a <span class="text-red-500" id="soft">SOFTWARE DEVELOPER</span>
+            I'm a <span class="" id="soft">SOFTWARE DEVELOPER</span>
           </h2>
           <p class="text-sm italic" data-aos="flip-up" data-aos-duration="1500">
             I am a web developer with a passion for creating dynamic and
@@ -202,14 +203,14 @@
             of my clients.
           </p>
           <div
-            class="justify-around space-x-10 m-5"
+            class="head-icon justify-around space-x-10 m-5"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
             <a
               href="https://www.linkedin.com/in/raymond-samuel-993971329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               aria-label="LinkedIn"
-              class="text-3xl hover:text-blue-500 text-red-500"
+              class="text-3xl hover:text-blue-500 "
             >
               <i
                 class="fa-brands fa-linkedin transition-transform transform hover:scale-125 duration-400"
@@ -218,7 +219,7 @@
             <a
               href="https://github.com/Rayflix55"
               aria-label="GitHub"
-              class="text-red-500 hover:text-white"
+              class=" hover:text-white"
             >
               <i
                 class="fa-brands fa-github text-3xl transition-transform transform hover:scale-125 duration-400"
@@ -227,7 +228,7 @@
             <a
               href="https://x.com/web3rayflix?t=P3YbITH5vzAHOWA8clK5GQ&s=09"
               aria-label="Twitter"
-              class="text-3xl text-red-500 hover:text-white"
+              class="text-3xl  hover:text-white"
             >
               <i
                 class="fa-brands fa-x-twitter transform hover:scale-125 transition-transform duration-400"
@@ -236,21 +237,23 @@
             <a
               href="https://www.instagram.com/web3rayflix?igsh=YzljYTk1ODg3Zg=="
               aria-label="Instagram"
-              class="text-3xl hover:text-yellow-500 text-red-500"
+              class="text-3xl hover:text-yellow-500 "
             >
               <i
                 class="fa-brands fa-instagram hover:scale-125 transition-transform duration-400"
               ></i>
             </a>
           </div>
-          <a
+        <div data-aos="zoom-in"
+              data-aos-duration="1500">
+            <a
             href="mailto:rayflix55@gmail.com?subject=Interested in Hiring&body=Hi Rayflix,%0D%0A%0D%0AI'm interested in discussing potential work opportunities with you.%0D%0A%0D%0ABest regards"
-            class="border-solid border-2 border-red-500 w-80 h-10 mt-5 mb-50 rounded-md bg-black text-red-500 duration-400 transition-transform transform hover:bg-red-500 hover:text-white hover:scale-110 inline-block text-center leading-10 no-underline"
-            data-aos="zoom-in"
-            data-aos-duration="1500"
+            class="hire-me  w-50 h-10 mt-5 ml-11 mb-50 rounded-xl duration-400 transition-transform transform hover:scale-110 inline-block text-center leading-10 duration-500 no-underline" 
+         
           >
             Hire <span></span> Me
           </a>
+        </div>
         </div>
       </div>
     </section>
@@ -260,7 +263,7 @@
       class="responsive-about flex justify-center items-center"
     >
       <div
-        class="about-card flex items-center bg-gradient-to-br from-gray-900/40 via-red-900/60 to-gray-950/40 backdrop-blur-sm border border-white/10 rounded-3xl shadow-2xl relative"
+        class="about-card flex items-center  backdrop-blur-sm border border-white/10 rounded-3xl shadow-2xl relative"
       >
         <div
           class="absolute inset-0 opacity-30"
@@ -289,7 +292,7 @@
             <div class="flex items-center space-x-2">
               <span class="text-gray-300 text-lg font-medium">Hi</span>
               <svg
-                class="w-6 h-6 text-red-400"
+                class="w-6 h-6 text-green-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -309,7 +312,7 @@
               Digital Solutions
             </h1>
 
-            <p class="text-gray-400 text-base lg:text-md leading-relaxed">
+            <p class="text-white text-base lg:text-md leading-relaxed">
               I am a passionate software developer with a strong focus on web
               development. <br />
               My journey in coding began at a young age, and it has been a
@@ -321,7 +324,7 @@
             <div class="pt-4">
               <a href="Rayflix_CV.docx" target="_blank" class="inline-block">
                 <button
-                  class="group bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  class="cv  font-semibold px-8 py-4 rounded-xl transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
                   <span class="text-lg">Download CV</span>
                   <svg
@@ -354,12 +357,12 @@
                 <img
                   src="/Pictures/About-me.png"
                   alt="Rayflix - Software Developer"
-                  class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  class="about-image w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
               <div
-                class="absolute -bottom-6 -right-6 w-full h-full bg-gradient-to-br from-red-500/20 to-pink-500/20 rounded-3xl blur-2xl -z-10"
+                class="absolute -bottom-6 -right-6 w-full h-full  rounded-3xl blur-2xl -z-10"
               ></div>
             </div>
           </div>
@@ -369,149 +372,122 @@
 
     <section id="third_section" class="responsive-skills"  data-aos="flip-down"
               data-aos-duration="1500">
-      <div
-        class="skills-card diagonal-stripes rounded-3xl shadow-2xl relative bg-gradient-to-br from-gray-900/40 via-red-900/60 to-gray-950/40 backdrop-blur-sm border border-white/10"
-      >
-        <div class="relative">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="flex justify-center md:justify-start">
-              <div class="relative bottom-10">
-                <h2
-                  class="vertical-text text-8xl md:text-9xl font-bold text-yellow-400 tracking-wider"
-                  id="skills"
-                >
-                  My <span>Skills</span>
-                </h2>
-              </div>
-            </div>
+      <div class="skills-container">
+      <!-- Header -->
+      <div class="skills-header">
+        <div class="skills-subtitle">SKILLS & EXPERIENCE</div>
+        <h1 class="skills-title">
+          Working with Latest Technologies & Stack
+        </h1>
+      </div>
 
-            <div class="space-y-12">
-              <div class="grid grid-cols-5 gap-8">
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <i class="fab fa-html5 text-7xl" style="color: #e34f26"></i>
-                  </div>
-                  <span class="text-white font-semibold text-sm">HTML</span>
-                </div>
-
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <i
-                      class="fab fa-css3-alt text-7xl"
-                      style="color: #1572b6"
-                    ></i>
-                  </div>
-                  <span class="text-white font-semibold text-sm">CSS</span>
-                </div>
-
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <svg
-                      class="w-16 h-16"
-                      viewBox="0 0 54 33"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill="#38BDF8"
-                        d="M27 0C19.8 0 15.3 3.6 13.5 10.8C16.2 7.2 19.35 5.85 23.4 6.75C25.71 7.26 27.33 8.82 29.13 10.56C32.07 13.41 35.46 16.5 42 16.5C49.2 16.5 53.7 12.9 55.5 5.7C52.8 9.3 49.65 10.65 45.6 9.75C43.29 9.24 41.67 7.68 39.87 5.94C36.93 3.09 33.54 0 27 0ZM13.5 16.5C6.3 16.5 1.8 20.1 0 27.3C2.7 23.7 5.85 22.35 9.9 23.25C12.21 23.76 13.83 25.32 15.63 27.06C18.57 29.91 21.96 33 28.5 33C35.7 33 40.2 29.4 42 22.2C39.3 25.8 36.15 27.15 32.1 26.25C29.79 25.74 28.17 24.18 26.37 22.44C23.43 19.59 20.04 16.5 13.5 16.5Z"
-                      />
-                    </svg>
-                  </div>
-                  <span class="text-white font-semibold text-sm"
-                    >Tailwind CSS</span
-                  >
-                </div>
-
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <i
-                      class="fab fa-js text-7xl bg-yellow-400 text-black rounded-lg p-2"
-                    ></i>
-                  </div>
-                  <span class="text-white font-semibold text-sm"
-                    >JAVASCRIPT</span
-                  >
-                </div>
-
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <i class="fab fa-react text-7xl" style="color: #61dafb"></i>
-                  </div>
-                  <span class="text-white font-semibold text-sm">REACT JS</span>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-5 gap-8">
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div
-                    class="w-20 h-20 flex items-center justify-center bg-white rounded-full"
-                  >
-                    <i class="fab fa-github text-6xl text-black"></i>
-                  </div>
-                  <span class="text-white font-semibold text-sm">GITHUB</span>
-                </div>
-
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <i
-                      class="fab fa-node-js text-7xl"
-                      style="color: #339933"
-                    ></i>
-                  </div>
-                  <span class="text-white font-semibold text-sm">NODE JS</span>
-                </div>
-
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <svg class="w-16 h-16" viewBox="0 0 256 351" fill="none">
-                      <path
-                        d="M1.253 280.732l1.605-3.131 99.353-188.518-44.15-83.475C54.392-1.283 45.074.474 43.87 8.188L1.253 280.732z"
-                        fill="#FFA000"
-                      />
-                      <path
-                        d="M134.417 148.974l32.039-32.812-32.039-61.007c-3.042-5.791-10.433-6.398-13.443-.59l-17.705 34.109-.53 1.744 31.678 58.556z"
-                        fill="#F57C00"
-                      />
-                      <path
-                        d="M134.417 148.974l-33.632-62.093-99.871 188.518 132.084 74.591c5.711 3.525 12.591 3.525 18.302 0l1.117-.629-18-200.387z"
-                        fill="#FFCA28"
-                      />
-                      <path
-                        d="M134.417 148.974l101.8 193.617 32.159-201.938c1.283-8.217-7.356-15.124-14.711-11.771l-119.248 20.092z"
-                        fill="#FFA000"
-                      />
-                    </svg>
-                  </div>
-                  <span class="text-white font-semibold text-sm">FIREBASE</span>
-                </div>
-
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <svg class="w-16 h-16" viewBox="0 0 256 549" fill="none">
-                      <path
-                        d="M175.622 61.108C152.612 33.807 132.797 6.078 128.749.32a1.03 1.03 0 0 0-1.492 0c-4.048 5.759-23.863 33.487-46.874 60.788-197.507 251.896 31.108 421.89 31.108 421.89l1.917 1.28c1.704 26.234 5.966 63.988 5.966 63.988h17.045s4.26-37.54 5.965-63.987l1.918-1.494c.213.214 228.828-169.78 31.32-421.677zm-47.726 418.05s-10.227-8.744-12.997-13.222v-.428l12.358-274.292c0-.853 1.491-.853 1.491 0l12.358 274.292v.428c-2.77 4.478-12.997 13.223-12.997 13.223h-.213z"
-                        fill="#10AA50"
-                      />
-                    </svg>
-                  </div>
-                  <span class="text-white font-semibold text-sm">MONGODB</span>
-                </div>
-
-                <div class="icon flex flex-col items-center space-y-3">
-                  <div class="w-20 h-20 flex items-center justify-center">
-                    <i
-                      class="fab fa-docker text-7xl"
-                      style="color: #2496ed"
-                    ></i>
-                  </div>
-                  <span class="text-white font-semibold text-sm">DOCKERS</span>
-                </div>
-              </div>
-            </div>
+      <!-- Tech Stack Grid -->
+      <div class="tech-grid">
+        <!-- HTML5 -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-html5" style="color: #e34f26"></i>
           </div>
+          <div class="tech-name">HTML5</div>
+        </div>
+        <!-- CSS3-->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-css3-alt" style="color: #1572b6"></i>
+          </div>
+          <div class="tech-name">CSS3</div>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 64 64">
+              <path
+                d="M32 16 C24 16 20 20 20 28 C24 24 28 23 32 24 C34 24.5 35.5 26 37 27.5 C39.5 30 42.5 32 48 32 C56 32 60 28 60 20 C56 24 52 25 48 24 C46 23.5 44.5 22 43 20.5 C40.5 18 37.5 16 32 16 Z M20 32 C12 32 8 36 8 44 C12 40 16 39 20 40 C22 40.5 23.5 42 25 43.5 C27.5 46 30.5 48 36 48 C44 48 48 44 48 36 C44 40 40 41 36 40 C34 39.5 32.5 38 31 36.5 C28.5 34 25.5 32 20 32 Z"
+                fill="#06B6D4"
+              />
+            </svg>
+          </div>
+          <div class="tech-name">Tailwind CSS</div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i
+              class="fab fa-js"
+              style="
+                color: #f7df1e;
+                background: #000;
+                padding: 8px;
+                border-radius: 8px;
+              "
+            ></i>
+          </div>
+          <div class="tech-name">Javascript</div>
+        </div>
+        <!-- React -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-react" style="color: #61dafb"></i>
+          </div>
+          <div class="tech-name">React</div>
+        </div>
+
+        <!-- Python -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-python" style="color: #3776ab"></i>
+          </div>
+          <div class="tech-name">Python</div>
+        </div>
+
+        <!-- Node JS -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-node-js" style="color: #339933"></i>
+          </div>
+          <div class="tech-name">Node JS</div>
+        </div>
+
+        <!-- Next JS -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 64 64">
+              <circle
+                cx="32"
+                cy="32"
+                r="22"
+                fill="#000"
+                stroke="#fff"
+                stroke-width="2"
+              />
+              <text
+                x="50%"
+                y="68%"
+                font-size="20"
+                font-weight="bold"
+                fill="#fff"
+                text-anchor="middle"
+                font-family="Arial"
+              >
+                N
+              </text>
+            </svg>
+          </div>
+          <div class="tech-name">Next JS</div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-github" style="color: white"></i>
+          </div>
+          <div class="tech-name">GitHub</div>
         </div>
       </div>
+    </div>
+
     </section>
 
     <section class="projects" id="fourth_section">

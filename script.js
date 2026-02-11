@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
         line_linked: {
           enable: true,
           distance: 150,
-          color: "#ef4444",
+          color: "#b0fc51",
           opacity: 0.4,
           width: 1,
         },
@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const typewriterCSS = `
             #soft::after {
                 content: '|';
-                color: #ef4444;
+                color: #b0fc51;
                 animation: blink 1s infinite;
                 margin-left: 2px;
             }
