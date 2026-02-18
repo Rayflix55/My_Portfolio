@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburgerIcon.classList.add("fa-bars");
   }
 
-  // Mobile menu functionality
   const menuToggle = document.getElementById("menu-toggle");
 
   if (menuToggle && mobileMenu && hamburgerIcon) {
@@ -41,14 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
           "flex",
         );
         mobileMenu.classList.add("opacity-0", "invisible", "max-h-0");
-        // Change X back to hamburger
+
         hamburgerIcon.classList.remove("fa-times");
         hamburgerIcon.classList.add("fa-bars");
       }
     });
   }
 
-  // FIX Bug 2: was href^='' (matches all anchors); changed to href^='#' (matches only in-page links)
   const navLinks = document.querySelectorAll("a[href^='#']");
 
   navLinks.forEach((link) => {
@@ -154,12 +152,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const sectionIds = Array.from(navLinks)
     .map((link) => link.getAttribute("href"))
-  .filter((id) => id && id !== '#');  
+    .filter((id) => id && id !== "#");
   function updateActiveNavLink() {
     const scrollPosition = window.scrollY + 100;
 
     sectionIds.forEach((id) => {
-        if (!id || id === '#') return;  // Add this line right here
+      if (!id || id === "#") return;
       const section = document.querySelector(id);
       if (section) {
         const sectionTop = section.offsetTop;
@@ -171,8 +169,6 @@ document.addEventListener("DOMContentLoaded", function () {
           scrollPosition >= sectionTop &&
           scrollPosition < sectionTop + sectionHeight
         ) {
-          // FIX Bug 3: was adding text-red-500 to all links during reset,
-          // permanently staining non-active links. Now only removes classes.
           navLinks.forEach((navLink) => {
             navLink.classList.remove("text-white", "underline", "font-bold");
           });
@@ -183,9 +179,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // FIX Bug 4/5: AOS init is now guarded and will also work when AOS loads
-  // after DOMContentLoaded (the <script> tag order in HTML is the real fix;
-  // this guard provides a fallback).
   function initAOS() {
     if (typeof AOS !== "undefined") {
       AOS.init({
@@ -199,9 +192,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Try immediately (works if AOS script is loaded before this file)
   initAOS();
-  // Fallback: retry after all scripts have had a chance to load
+
   window.addEventListener("load", initAOS);
 
   if (typeof particlesJS !== "undefined") {
@@ -332,9 +324,8 @@ document.addEventListener("DOMContentLoaded", function () {
   updateActiveNavLink();
   updateSidebarActiveState();
 
-  // Typewriter Effect for Role Titles
   function initTypewriterEffect() {
-    const roles = ["SOFTWARE DEVELOPER", "TECHNICAL WRITER"];
+    const roles = ["FRONTEND DEVELOPER", "TECHNICAL WRITER"];
 
     const typewriterElement = document.getElementById("soft");
 
@@ -346,9 +337,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentRoleIndex = 0;
     let currentCharIndex = 0;
     let isDeleting = false;
-    let typeSpeed = 50; // Typing speed in milliseconds
-    let deleteSpeed = 50; // Deleting speed in milliseconds
-    let pauseTime = 2000; // Pause time between roles
+    let typeSpeed = 50;
+    let deleteSpeed = 50;
+    let pauseTime = 2000;
 
     function typeWriter() {
       const currentRole = roles[currentRoleIndex];
