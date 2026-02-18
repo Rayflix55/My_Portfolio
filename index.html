@@ -33,16 +33,16 @@
         <div class="relative group">
           <button
             onclick="scrollToSection('first_section')"
-            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center  relative"
             data-section="first_section"
           >
             <i class="fas fa-home text-lg"></i>
             <div
-              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2  text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
             >
               Home
               <div
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent "
               ></div>
             </div>
           </button>
@@ -51,12 +51,12 @@
         <div class="relative group">
           <button
             onclick="scrollToSection('second_section')"
-            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center "
             data-section="second_section"
           >
             <i class="fas fa-user text-lg"></i>
             <div
-              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2  text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
             >
               About
               <div
@@ -69,16 +69,16 @@
         <div class="relative group">
           <button
             onclick="scrollToSection('third_section')"
-            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center  relative"
             data-section="third_section"
           >
             <i class="fas fa-chart-bar text-lg"></i>
             <div
-              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2  text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
             >
               My Skills
               <div
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent "
               ></div>
             </div>
           </button>
@@ -87,16 +87,16 @@
         <div class="relative group">
           <button
             onclick="scrollToSection('fourth_section')"
-            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center  relative"
             data-section="fourth_section"
           >
             <i class="fas fa-cogs text-lg"></i>
             <div
-              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2  text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
             >
               My Builds
               <div
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent "
               ></div>
             </div>
           </button>
@@ -105,16 +105,16 @@
         <div class="relative group">
           <button
             onclick="scrollToSection('fifth_section')"
-            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white relative"
+            class="sidebar-icon w-12 h-12 rounded-lg flex items-center justify-center  relative"
             data-section="fifth_section"
           >
             <i class="fas fa-envelope text-lg"></i>
             <div
-              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
+              class="tooltip absolute left-16 top-1/2 transform -translate-y-1/2  text-sm px-3 py-1 rounded-lg whitespace-nowrap z-50"
             >
               Contact
               <div
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent border-r-gray-900"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 border-4 border-transparent "
               ></div>
             </div>
           </button>
@@ -122,24 +122,24 @@
       </nav>
 
       <div class="p-2 border-t border-green-500/30">
-        <div class="w-full bg-gray-700 rounded-full h-1">
+        <div class="w-full  rounded-full h-1">
           <div
             id="progress-bar"
             class="progress-bar bg-green-500 h-1 rounded-full"
             style="width: 20%"
           ></div>
         </div>
-        <p class="text-xs text-gray-400 text-center mt-1" id="progress-text">
+        <p class="text-xs  text-center mt-1" id="progress-text">
           1/5
         </p>
       </div>
     </div>
-    <div id="particles-js" class="fixed h-full"></div>
+    <div id="particles-js" class="fixed inset-0 w-full h-full -z-10"></div>
 
     <section id="first-section" class="p-4 md:hidden">
-      <nav class="flex justify-between items-center mt-4 mb-4">
+      <nav class="mobile-nav flex justify-between items-center mt-4 mb-4">
         <h1
-          class="text-3xl text-red-500"
+          class="text-3xl "
           id="Logo"
           data-aos="zoom-in"
           data-aos-duration="1500"
@@ -148,7 +148,7 @@
         </h1>
 
         <div
-          class="md:hidden text-white text-2xl cursor-pointer"
+          class="md:hidden hamburger text-2xl cursor-pointer"
           id="menu-toggle"
         >
           <i class="fas fa-bars" id="hamburger-icon"></i>
@@ -157,7 +157,7 @@
 
       <div
         id="mobile-menu"
-        class="md:hidden flex-col space-y-4 px-4 text-red-500 items-center opacity-0 invisible transition-all duration-300 ease-in-out"
+        class="md:hidden flex-col space-y-4 px-4  items-center opacity-0 invisible transition-all duration-300 ease-in-out"
       >
         <a href="#first_section" class="block hover:text-white">Home</a>
         <a href="#second_section" class="block hover:text-white">About Me</a>
@@ -167,9 +167,10 @@
       </div>
     </section>
 
-    <section id="first_section" class="responsive-hero" >
+  <main class="main-content">
+<section id="first_section" class="responsive-hero" >
       <div
-        class="flex lg:justify-between mt-10 max-[480px]:flex-col md:flex-col lg:flex-row items-center"
+        class="first flex lg:justify-between mt-10 max-[480px]:flex-col md:flex-col lg:flex-row items-center"
       >
         <div class=""  data-aos="fade-down"
               data-aos-duration="2000">
@@ -180,7 +181,7 @@
         
           />
         </div>
-        <div class="lg:mt-40 flex flex-col justify-center mr-30 ml-30">
+        <div class="hey lg:mt-40 flex flex-col justify-center px-6 lg:px-10">
           <h1 class="text-2xl mb-2">
             Hey, I'm
             <span
@@ -191,7 +192,7 @@
               >Rayflix</span
             >
           </h1>
-          <h2 class="text-3xl mb-3 max-[480px]:text-3xl">
+          <h2 class="soft text-3xl mb-3 max-[480px]:text-3xl">
             I'm a <span class="" id="soft">SOFTWARE DEVELOPER</span>
           </h2>
           <p class="text-sm italic" data-aos="flip-up" data-aos-duration="1500">
@@ -210,7 +211,7 @@
             <a
               href="https://www.linkedin.com/in/raymond-samuel-993971329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               aria-label="LinkedIn"
-              class="text-3xl hover:text-blue-500 "
+              class=" hover:text-blue-500 "
             >
               <i
                 class="fa-brands fa-linkedin transition-transform transform hover:scale-125 duration-400"
@@ -222,13 +223,13 @@
               class=" hover:text-white"
             >
               <i
-                class="fa-brands fa-github text-3xl transition-transform transform hover:scale-125 duration-400"
+                class="fa-brands fa-github transition-transform transform hover:scale-125 duration-400"
               ></i>
             </a>
             <a
               href="https://x.com/web3rayflix?t=P3YbITH5vzAHOWA8clK5GQ&s=09"
               aria-label="Twitter"
-              class="text-3xl  hover:text-white"
+              class="  hover:text-white"
             >
               <i
                 class="fa-brands fa-x-twitter transform hover:scale-125 transition-transform duration-400"
@@ -237,14 +238,14 @@
             <a
               href="https://www.instagram.com/web3rayflix?igsh=YzljYTk1ODg3Zg=="
               aria-label="Instagram"
-              class="text-3xl hover:text-yellow-500 "
+              class=" hover:text-yellow-500 "
             >
               <i
                 class="fa-brands fa-instagram hover:scale-125 transition-transform duration-400"
               ></i>
             </a>
           </div>
-        <div data-aos="zoom-in"
+        <div class="hire-me-cont" data-aos="zoom-in"
               data-aos-duration="1500">
             <a
             href="mailto:rayflix55@gmail.com?subject=Interested in Hiring&body=Hi Rayflix,%0D%0A%0D%0AI'm interested in discussing potential work opportunities with you.%0D%0A%0D%0ABest regards"
@@ -260,10 +261,10 @@
 
     <section
       id="second_section"
-      class="responsive-about flex justify-center items-center"
+      class="responsive-about flex  justify-center items-center"
     >
       <div
-        class="about-card flex items-center  backdrop-blur-sm border border-white/10 rounded-3xl shadow-2xl relative"
+        class="about-card flex items-center  backdrop-blur-sm border border-white/10 rounded-3xl "
       >
         <div
           class="absolute inset-0 opacity-30"
@@ -275,10 +276,10 @@
         ></div>
 
         <div
-          class="absolute top-20 left-10 w-64 h-64 bg-red-500 opacity-5 rounded-full blur-3xl"
+          class="absolute top-20 left-10 w-64 h-64  opacity-5 rounded-full blur-3xl"
         ></div>
         <div
-          class="absolute bottom-10 right-20 w-96 h-96 bg-red-500 opacity-3 rounded-full blur-3xl"
+          class="absolute bottom-10 right-20 w-96 h-96  opacity-3 rounded-full blur-3xl"
         ></div>
 
         <div
@@ -307,8 +308,8 @@
               class="text-4xl lg:text-5xl font-bold text-white leading-tight"
               id="passion"
             >
-              Coding Is My<br />
-              Passion & I Build<br />
+              Coding Is My
+              Passion & I Build
               Digital Solutions
             </h1>
 
@@ -352,7 +353,7 @@
           >
             <div class="relative">
               <div
-                class="relative w-80 h-96 lg:w-96 lg:h-[500px] rounded-3xl bg-gradient-to-b from-gray-200 to-gray-300 shadow-2xl"
+                class="about-img relative w-full h-full lg:w-96 lg:h-[500px] rounded-3xl bg-gradient-to-b from-gray-200 to-gray-300 shadow-2xl"
               >
                 <img
                   src="/Pictures/About-me.png"
@@ -373,7 +374,7 @@
     <section id="third_section" class="responsive-skills"  data-aos="flip-down"
               data-aos-duration="1500">
       <div class="skills-container">
-      <!-- Header -->
+   
       <div class="skills-header">
         <div class="skills-subtitle">SKILLS & EXPERIENCE</div>
         <h1 class="skills-title">
@@ -381,16 +382,16 @@
         </h1>
       </div>
 
-      <!-- Tech Stack Grid -->
+ 
       <div class="tech-grid">
-        <!-- HTML5 -->
+       
         <div class="tech-item">
           <div class="tech-icon">
             <i class="fab fa-html5" style="color: #e34f26"></i>
           </div>
           <div class="tech-name">HTML5</div>
         </div>
-        <!-- CSS3-->
+     
         <div class="tech-item">
           <div class="tech-icon">
             <i class="fab fa-css3-alt" style="color: #1572b6"></i>
@@ -398,7 +399,7 @@
           <div class="tech-name">CSS3</div>
         </div>
 
-        <!-- Tailwind CSS -->
+       
         <div class="tech-item">
           <div class="tech-icon">
             <svg viewBox="0 0 64 64">
@@ -411,7 +412,7 @@
           <div class="tech-name">Tailwind CSS</div>
         </div>
 
-        <!-- JavaScript -->
+  
         <div class="tech-item">
           <div class="tech-icon">
             <i
@@ -426,7 +427,7 @@
           </div>
           <div class="tech-name">Javascript</div>
         </div>
-        <!-- React -->
+   
         <div class="tech-item">
           <div class="tech-icon">
             <i class="fab fa-react" style="color: #61dafb"></i>
@@ -434,7 +435,7 @@
           <div class="tech-name">React</div>
         </div>
 
-        <!-- Python -->
+      
         <div class="tech-item">
           <div class="tech-icon">
             <i class="fab fa-python" style="color: #3776ab"></i>
@@ -442,7 +443,7 @@
           <div class="tech-name">Python</div>
         </div>
 
-        <!-- Node JS -->
+     
         <div class="tech-item">
           <div class="tech-icon">
             <i class="fab fa-node-js" style="color: #339933"></i>
@@ -450,7 +451,6 @@
           <div class="tech-name">Node JS</div>
         </div>
 
-        <!-- Next JS -->
         <div class="tech-item">
           <div class="tech-icon">
             <svg viewBox="0 0 64 64">
@@ -478,7 +478,7 @@
           <div class="tech-name">Next JS</div>
         </div>
 
-        <!-- GitHub -->
+     
         <div class="tech-item">
           <div class="tech-icon">
             <i class="fab fa-github" style="color: white"></i>
@@ -616,7 +616,7 @@
       </div>
     </section>
 
-    <section id="fifth_section" class=" ">
+    <section id="fifth_section" class="">
       <div class="container">
         <div class="contact-wrapper">
           <div class="left-panel">
@@ -731,10 +731,12 @@
         </div>
       </div>
     </section>
+  </main>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="script.js"></script>
+ 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  const navLinks = document.querySelectorAll("a[href^='']");
+  // FIX Bug 2: was href^='' (matches all anchors); changed to href^='#' (matches only in-page links)
+  const navLinks = document.querySelectorAll("a[href^='#']");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -153,12 +154,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const sectionIds = Array.from(navLinks)
     .map((link) => link.getAttribute("href"))
-    .filter((id) => id);
-
+  .filter((id) => id && id !== '#');  
   function updateActiveNavLink() {
     const scrollPosition = window.scrollY + 100;
 
     sectionIds.forEach((id) => {
+        if (!id || id === '#') return;  // Add this line right here
       const section = document.querySelector(id);
       if (section) {
         const sectionTop = section.offsetTop;
@@ -170,28 +171,38 @@ document.addEventListener("DOMContentLoaded", function () {
           scrollPosition >= sectionTop &&
           scrollPosition < sectionTop + sectionHeight
         ) {
+          // FIX Bug 3: was adding text-red-500 to all links during reset,
+          // permanently staining non-active links. Now only removes classes.
           navLinks.forEach((navLink) => {
             navLink.classList.remove("text-white", "underline", "font-bold");
-            navLink.classList.add("text-red-500");
           });
 
           link.classList.add("text-white", "underline", "font-bold");
-          link.classList.remove("text-red-500");
         }
       }
     });
   }
 
-  if (typeof AOS !== "undefined") {
-    AOS.init({
-      once: false,
-      mirror: true,
-      offset: 0,
-      duration: 1000,
-      easing: "ease-out",
-    });
-    AOS.refreshHard();
+  // FIX Bug 4/5: AOS init is now guarded and will also work when AOS loads
+  // after DOMContentLoaded (the <script> tag order in HTML is the real fix;
+  // this guard provides a fallback).
+  function initAOS() {
+    if (typeof AOS !== "undefined") {
+      AOS.init({
+        once: false,
+        mirror: true,
+        offset: 0,
+        duration: 1000,
+        easing: "ease-out",
+      });
+      AOS.refreshHard();
+    }
   }
+
+  // Try immediately (works if AOS script is loaded before this file)
+  initAOS();
+  // Fallback: retry after all scripts have had a chance to load
+  window.addEventListener("load", initAOS);
 
   if (typeof particlesJS !== "undefined") {
     particlesJS("particles-js", {
@@ -280,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateSidebarActiveState() {
-    const scrollPosition = window.scrollY + 100;
+    const scrollPosition = window.scrollY + 300;
 
     sidebarSections.forEach((sectionId, index) => {
       const section = document.getElementById(sectionId);
